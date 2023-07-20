@@ -4,6 +4,7 @@
   "homepage": "https://kpomm.github.io/portfolio-react",
   "description": "*description*",
   "main": "src/index.js",
+  "build-prod": "parcel build src/index.html --dist-dir build",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
