@@ -1,15 +1,17 @@
 import React from 'react';
 import {
-  BrowserRouter, Routes, Route, useParams,
+  BrowserRouter, Routes, Route,
 } from 'react-router-dom';
 // import Counter from './counter';
 import Nav from './Nav';
 import Landing from './Landing';
+import Photos from './Photos';
+import Projects from './Projects';
 
 // components
-function About(props) {
-  return <div> All there is to know about me </div>;
-}
+// function About(props) {
+//   return <div> All there is to know about me </div>;
+// }
 
 // function Welcome(props) {
 //   return (
@@ -20,10 +22,18 @@ function About(props) {
 //   );
 // }
 
-function Test(props) {
-  const { id } = useParams();
-  return <div> ID: {id} </div>;
-}
+// function Test(props) {
+//   const { id } = useParams();
+//   return (
+//     <div>
+//       {' '}
+//       ID:
+//       {' '}
+//       {id}
+//       {' '}
+//     </div>
+//   );
+// }
 
 function FallBack(props) {
   return <div>URL Not Found</div>;
@@ -49,11 +59,12 @@ function App(props) {
       <div>
         <Nav />
         <Routes>
-          <Route path="/"
+          <Route
+            path="/"
             element={<Landing />}
           />
-          <Route path="/photos" element={<About />} />
-          <Route path="/projects" element={<Test />} />
+          <Route path="/photos" element={<Photos />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/contact-me" element={<FallBack />} />
         </Routes>
       </div>

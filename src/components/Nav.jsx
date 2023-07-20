@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
@@ -7,9 +8,11 @@ function NavBar() {
       <div className="nav-stuff">
         <ul className="nav-list">
           <li>
-            <NavLink to="/"
+            <NavLink
+              to="/"
               id="logo"
-            ><i className="fa-solid fa-k fa-2xl" />
+            >
+              <p>test</p>
             </NavLink>
           </li>
           <li className="nav-right"><NavLink to="/contact-me">contact me</NavLink></li>

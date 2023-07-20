@@ -1,5 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
+import pfp from '../img/pfp.jpg';
+import cptwn from '../img/cptwn.jpg';
+import programming from '../img/programming.svg';
+import photography from '../img/photography.jpg';
+import design from '../img/design.svg';
+import contact from '../img/contact-me.svg';
 
 function Landing() {
   return (
@@ -7,7 +13,7 @@ function Landing() {
       <div className="section" id="landing">
         <ul className="columns">
           <li className="half-element">
-            <img id="profile-pic" src="img/pfp.jpg" alt="" />
+            <img id="profile-pic" src={pfp} alt="" />
             <h1>kpomm</h1>
             <p>welcome to my website!</p>
           </li>
@@ -44,25 +50,27 @@ function Landing() {
               stay up all night and sleep during the day.
             </p>
             <p>
-              <a href="https://sites.dartmouth.edu/lynch-rocket-lab/">my research lab
+              <a href="https://sites.dartmouth.edu/lynch-rocket-lab/">
+                my research lab
               </a>
             </p>
             <p>
               <a
                 href="https://physics.dartmouth.edu/news/2023/02/winter-2023-astronomy-fsp"
-              >my time in cape town
+              >
+                my time in cape town
               </a>
             </p>
           </li>
           <li className="half-element rounded-element shadow-element">
-            <img className="img-cover" src="img/cptwn.jpg" alt="" />
+            <img className="img-cover" src={cptwn} alt="" />
           </li>
         </ul>
       </div>
       <div className="section" id="programming">
         <ul className="columns smaller-columns">
           <li className="half-element rounded-element shadow-element">
-            <img className="img-contain" src="img/programming.svg" alt="" />
+            <img className="img-contain" src={programming} alt="" />
           </li>
           <li className="half-element align-left">
             <h2>programming</h2>
@@ -98,14 +106,14 @@ function Landing() {
             </p>
           </li>
           <li className="half-element rounded-element shadow-element">
-            <img href="photos.html" className="img-cover" src="img/photography.jpg" alt="" />
+            <img href="photos.html" className="img-cover" src={photography} alt="" />
           </li>
         </ul>
       </div>
       <div className="section" id="design">
         <ul className="columns smaller-columns">
           <li className="half-element rounded-element shadow-element">
-            <img className="img-contain" src="img/design.svg" alt="" />
+            <img className="img-contain" src={design} alt="" />
           </li>
           <li className="half-element align-left">
             <h2>design</h2>
@@ -119,7 +127,8 @@ function Landing() {
             <p>
               <a
                 href="https://www.figma.com/files/user/1112504140237920766?fuid=1112504140237920766"
-              >check out my figma
+              >
+                check out my figma
               </a>
             </p>
           </li>
@@ -143,7 +152,7 @@ function Landing() {
                 <a href="google.com">Email</a>
               </p>
             </div>
-            <img src="img/contact-me.svg" alt="" />
+            <img src={contact} alt="" />
           </li>
         </ul>
       </div>
