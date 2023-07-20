@@ -1,0 +1,421 @@
+/* doing imports in css to keep all the styling away from the html */
+@import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* from class */
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	scroll-behavior: smooth;
+}
+
+/* body and text */
+body {
+	font-family: "Anek Malayalam", sans-serif;
+	margin: 0;
+	background-color: #fcf8ff;
+}
+
+h1 {
+	font-family: "Raleway", sans-serif;
+	font-weight: 900;
+	font-size: 5rem;
+	margin-bottom: 3%;
+	margin-top: 4%;
+	color: #4b4453;
+}
+
+h2 {
+	margin-top: 9%;
+	font-family: "Raleway", sans-serif;
+	font-size: 3rem;
+	color: #4b4453;
+}
+
+h2 > a {
+	font-family: "Raleway", sans-serif;
+	font-size: 3rem;
+	color: #4b4453;
+	text-decoration: none;
+}
+
+h2 > a:hover {
+	font-family: "Raleway", sans-serif;
+	font-size: 3rem;
+	color: #a77ce4;
+	transition-timing-function: linear;
+	transition-duration: 0.1s;
+}
+
+h3 {
+	font-family: "Raleway", sans-serif;
+	font-size: 1.8rem;
+	font-weight: 700;
+	color: #4b4453;
+	margin-bottom: 0;
+}
+
+h4 {
+	font-family: "Raleway", sans-serif;
+	font-size: 1.3rem;
+	color: #4b4453;
+	margin-bottom: 0;
+	font-weight: 500;
+}
+
+p {
+	color: #4b4453;
+	font-size: 1.4rem;
+}
+
+p > a {
+	color: #4b4453;
+}
+
+.text-section {
+	width: 100%;
+	height: auto;
+	text-align: left;
+	padding-left: 6%;
+	padding-right: 6%;
+	padding-top: 0;
+}
+
+.half-column-long {
+	width: 40%;
+	height: auto;
+	text-align: left;
+	padding-top: 0;
+	padding-bottom: 5%;
+}
+
+.project-list {
+	list-style-type: none;
+	width: 100%;
+}
+
+.subsection-text {
+	margin-left: 5%;
+}
+
+#profile-pic {
+	border-radius: 100%;
+	height: 40vh;
+	width: 40vh;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.align-left {
+	text-align: left;
+}
+
+i.centered-icon {
+	margin-right: 50%;
+	margin-left: 50%;
+}
+
+/* basic columns and sections */
+
+/* boilerplate code from https://brunchlabs.slides.com/timtregubov/cs52-css?token=pW34poG0#/9/1 */
+/* aligns objects in a row -- a set of columns, with ample space around them  */
+.columns {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-direction: row;
+	list-style-type: none;
+	flex-wrap: wrap;
+	margin: none;
+}
+
+.smaller-columns {
+	margin-top: 6%;
+	height: 90%;
+}
+
+.columns > li {
+	margin: 1%;
+}
+
+li > img {
+	width: 100%;
+}
+
+.sub-section > ul > li {
+	text-align: left;
+}
+
+.half-element {
+	width: 40%;
+	height: 70%;
+	overflow: hidden;
+}
+
+.rounded-element {
+	border-radius: 10%;
+	background-color: #fcf8ff;
+}
+
+.shadow-element {
+	box-shadow: 0px 5px 10px 0px #4b4453;
+	transition-timing-function: ease-in;
+	transition-duration: 0.15s;
+}
+
+.shadow-element:hover {
+	transform: translateY(-10px);
+	box-shadow: 0px 10px 15px 0px #4b4453;
+}
+
+.img-cover {
+	object-fit: cover;
+	min-height: 100%;
+}
+
+.img-contain {
+	object-fit: fill;
+	max-height: 80%;
+	margin-top: 10%;
+}
+
+.section {
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	padding: 2%;
+}
+
+/* moving onto the nav bar */
+#logo {
+	margin-top: 2px;
+	color: #4b4453;
+}
+
+#logo:hover {
+	color: #a77ce4;
+}
+
+/* elements from the following tutorial */
+/* https://unused-css.com/blog/css-only-hamburger-menu/ */
+.hamburger-container {
+	width: 100%;
+	height: 8vh;
+	background-color: none;
+	padding: 0;
+}
+
+.hamburger-container > input,
+.hamburger {
+	visibility: hidden;
+}
+
+/* navigation bar */
+/* modified code from here, but used display: flex instead for more ease of use */
+/* https://www.w3schools.com/css/css_navbar.asp */
+ul.nav-list {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 5%;
+	padding-right: 5%;
+	position: fixed;
+	top: 0;
+	height: 7vh;
+	background-color: #fcf8ff;
+	flex-shrink: 0;
+	width: 100%;
+}
+
+/* navigation bar */
+/* modified code from here */
+/* https://www.w3schools.com/css/css_navbar.asp */
+ul.nav-list > li a {
+	display: block;
+	font-size: 1.3rem;
+	padding: 20px;
+	float: left;
+	text-decoration: none;
+	color: #4b4453;
+	transition-duration: 0.15s;
+	transition-timing-function: linear;
+}
+
+#below-nav-bar {
+	width: 100%;
+	height: 4vh;
+	position: fixed;
+	top: 7vh;
+	/* background: blue; */
+	background: linear-gradient(#fcf8ff, #ffffff00);
+}
+
+.nav-right {
+	float: right;
+}
+
+.nav-right > a:hover {
+	color: #a77ce4;
+}
+
+.hover-underline:hover {
+	text-decoration: underline;
+}
+
+/* moving onto the first section, landing */
+#landing {
+	margin-top: 3%;
+	margin-bottom: 3%;
+	text-align: left;
+}
+
+/* photogrid stuff */
+.photo-grid {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 0% 6% 0% 6%;
+}
+
+.photo-grid > img {
+	margin-bottom: 10%;
+	max-width: 40vw;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in;
+	overflow: hidden;
+}
+
+.photo-grid > img:hover {
+	transform: translateY(-5px);
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+#contact-panels {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 10%;
+}
+
+#contact-panels > p > a {
+	padding: 12%;
+	font-weight: 400;
+}
+
+/* from course website */
+@media (max-width: 640px) {
+	/* centering all content on the website  */
+	.section {
+		justify-content: center;
+	}
+
+	ul.nav-list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	/* The below code (HAMBURGER BAR SECTION) was created inspired by the tutorial below. I modified a few things as necessary to fit the aims of my website */
+	/* HOWEVER, I definitely started with the code from this tutorial, I do not take credit */
+	/* https://unused-css.com/blog/css-only-hamburger-menu/ */
+
+	/* This is to make the hamburger menu visible when we change to mobile */
+	.hamburger-container > input,
+	.hamburger {
+		visibility: visible;
+	}
+
+	/* styling the hamburger icon */
+	.hamburger {
+		z-index: 1;
+		position: absolute;
+		top: 1%;
+		right: 0px;
+		margin: 3%;
+		width: 20px;
+		height: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	/* this is a 'slice' as used in the tutorial, modified to my liking */
+	/* definitely used the css used as a reference point */
+	.hamburger .slice {
+		width: 100%;
+		height: 4px;
+		background: #4895ef;
+	}
+
+	/* checkbox moved to the top right corner where the hamburger is */
+	/* modified boilerplate code */
+	.hamburger-container .checkbox {
+		opacity: 0;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+	}
+
+	/* this sets a starting location for the navigation stuff before we translate it over */
+	/* THIS CODE IS WAS DIRECTLY TAKEN FROM https://unused-css.com/blog/css-only-hamburger-menu/ */
+	/* IT WAS THEN MODIFIED TO MY LIKING */
+	.nav-stuff {
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: 100%;
+		background: black;
+		transform: translateX(+100%);
+		transition: transform 0.3s linear;
+	}
+
+	/* if we click the check box, the menu moves over */
+	/* from same tutorial */
+	.hamburger-container .checkbox:checked ~ .nav-stuff {
+		visibility: visible;
+		transform: translateX(0%);
+	}
+
+	/* same stuff but for the links */
+	/* from same tutorial */
+	.hamburger-container .nav-stuff a {
+		visibility: hidden;
+		transition: visibility 0.3s linear;
+	}
+
+	/* from same tutorial */
+	.hamburger-container .checkbox:checked ~ .nav-stuff a {
+		visibility: visible;
+	}
+
+	/* make flex columns for mobile! */
+	.columns {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	/* this section modifies main structural elements that define my page */
+	.half-element {
+		width: 80%;
+	}
+
+	.fact {
+		width: 80%;
+	}
+
+	.person {
+		width: 100%;
+	}
+
+	.place {
+		width: 90%;
+	}
+}
