@@ -16,7 +16,7 @@ function NavBar() {
               <img id="nav-logo" src={logo} alt="" />
             </NavLink>
           </li>
-          <li className="nav-right"><NavLink to="/#contact-me">contact me</NavLink></li>
+          <li className="nav-right"><NavLink to="/contact-me">contact me</NavLink></li>
           <li className="nav-right"><NavLink to="/projects">projects</NavLink></li>
           <li className="nav-right"><NavLink to="/photos">photos</NavLink></li>
         </ul>

@@ -7,8 +7,7 @@ import cptwn from '../img/cptwn.jpg';
 import programming from '../img/programming.svg';
 import photography from '../img/photography.jpg';
 import design from '../img/design.svg';
-import contact from '../img/contact-me.svg';
-import logo from '../img/logo.svg';
+import ContactMe from './ContactMe';
 
 function Landing() {
   return (
@@ -135,26 +134,7 @@ function Landing() {
           </li>
         </ul>
       </div>
-      <div className="section" id="contact-me">
-        <ul className="columns smaller-columns">
-          <li className="half-column-long">
-            <img id="logo-larger" src={logo} alt="" />
-            <h2>contact me</h2>
-            <div id="contact-panels">
-              <a href="https://www.linkedin.com/in/kpommerening/">
-                <button type="submit">LinkedIn</button>
-              </a>
-              <a href="https://github.com/kpomm">
-                <button type="submit">Email</button>
-              </a>
-              <a href="https://github.com/kpomm">
-                <button type="submit">GitHub</button>
-              </a>
-            </div>
-            <img src={contact} alt="" />
-          </li>
-        </ul>
-      </div>
+      <ContactMe />
     </div>
   );
 }

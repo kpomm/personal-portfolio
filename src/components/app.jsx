@@ -7,6 +7,7 @@ import Nav from './Nav';
 import Landing from './Landing';
 import Photos from './Photos';
 import Projects from './Projects';
+import ContactMe from './ContactMe';
 
 // components
 // function About(props) {
@@ -35,9 +36,9 @@ import Projects from './Projects';
 //   );
 // }
 
-function FallBack(props) {
-  return <div>URL Not Found</div>;
-}
+// function FallBack(props) {
+//   return <div>URL Not Found</div>;
+// }
 
 // function Nav(props) {
 //   return (
@@ -65,7 +66,7 @@ function App(props) {
           />
           <Route path="/photos" element={<Photos />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/contact-me" element={<FallBack />} />
+          <Route path="/contact-me" element={<ContactMe />} />
         </Routes>
       </div>
     </BrowserRouter>
