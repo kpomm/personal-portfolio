@@ -9,20 +9,6 @@ import Photos from './Photos';
 import Projects from './Projects';
 import ContactMe from './ContactMe';
 
-// components
-// function About(props) {
-//   return <div> All there is to know about me </div>;
-// }
-
-// function Welcome(props) {
-//   return (
-//     <div className="parent">
-//       <div>Welcome</div>
-//       <Counter />
-//     </div>
-//   );
-// }
-
 // function Test(props) {
 //   const { id } = useParams();
 //   return (

@@ -2,6 +2,7 @@ import React from 'react';
 import contact from '../img/contact-me.svg';
 import logo from '../img/logo.svg';
 
+// contact me page
 function ContactMe() {
   return (
     <div className="section" id="contact-me">
