@@ -26,7 +26,6 @@ function Photos() {
         <img src={images.p} alt="" />
         <img src={images.q} alt="" />
         <img src={images.r} alt="" />
-
       </div>
     </div>
   );

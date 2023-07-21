@@ -8,7 +8,7 @@ function Projects() {
         <h2>current & past projects</h2>
       </div>
       <div className="section columns">
-        <div className="half-column-long">
+        <div className="half-column-long rounded-element shadow-element">
           <h3>current</h3>
           <ul className="project-list">
             <li className="list-item">
@@ -28,7 +28,7 @@ function Projects() {
             </li>
           </ul>
         </div>
-        <div className="half-column-long">
+        <div className="half-column-long rounded-element shadow-element">
           <h3>past</h3>
           <ul className="project-list">
             <li className="list-item">

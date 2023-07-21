@@ -1,6 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import logo from '../img/logo.svg';
 
 function NavBar() {
   return (
@@ -12,10 +13,10 @@ function NavBar() {
               to="/"
               id="logo"
             >
-              <p>test</p>
+              <img id="nav-logo" src={logo} alt="" />
             </NavLink>
           </li>
-          <li className="nav-right"><NavLink to="/contact-me">contact me</NavLink></li>
+          <li className="nav-right"><NavLink to="/#contact-me">contact me</NavLink></li>
           <li className="nav-right"><NavLink to="/projects">projects</NavLink></li>
           <li className="nav-right"><NavLink to="/photos">photos</NavLink></li>
         </ul>

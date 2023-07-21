@@ -1,11 +1,14 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
+import { IoIosArrowDown } from 'react-icons/io';
 import pfp from '../img/pfp.jpg';
 import cptwn from '../img/cptwn.jpg';
 import programming from '../img/programming.svg';
 import photography from '../img/photography.jpg';
 import design from '../img/design.svg';
 import contact from '../img/contact-me.svg';
+import logo from '../img/logo.svg';
 
 function Landing() {
   return (
@@ -32,6 +35,7 @@ function Landing() {
             </h2>
           </li>
         </ul>
+        <IoIosArrowDown className="centered-icon" />
         {/* <i
           className="fa-solid fa-angle-down fa-2xl centered-icon"
           style="color: #4b4453"
@@ -84,7 +88,7 @@ function Landing() {
               that i am very proud of!
             </p>
             <p>
-              <a href="projects.html">see my projects!</a>
+              <a href="https://github.com/kpomm">github</a>
             </p>
           </li>
         </ul>
@@ -100,9 +104,6 @@ function Landing() {
               pictures but now work primarily in 35mm and 120mm film. i still
               carry a small digital camera on me, and primarily focus on street
               photography!
-            </p>
-            <p>
-              <a href="photos.html">see my photos</a>
             </p>
           </li>
           <li className="half-element rounded-element shadow-element">
@@ -126,7 +127,7 @@ function Landing() {
             </p>
             <p>
               <a
-                href="https://www.figma.com/files/user/1112504140237920766?fuid=1112504140237920766"
+                href="https://www.figma.com/@kpomm"
               >
                 check out my figma
               </a>
@@ -137,20 +138,18 @@ function Landing() {
       <div className="section" id="contact-me">
         <ul className="columns smaller-columns">
           <li className="half-column-long">
+            <img id="logo-larger" src={logo} alt="" />
             <h2>contact me</h2>
             <div id="contact-panels">
-              <p>
-                <a href="google.com">LinkedIn</a>
-              </p>
-              <p>
-                <a href="google.com">Email</a>
-              </p>
-              <p>
-                <a href="google.com">GitHub</a>
-              </p>
-              <p>
-                <a href="google.com">Email</a>
-              </p>
+              <a href="https://www.linkedin.com/in/kpommerening/">
+                <button type="submit">LinkedIn</button>
+              </a>
+              <a href="https://github.com/kpomm">
+                <button type="submit">Email</button>
+              </a>
+              <a href="https://github.com/kpomm">
+                <button type="submit">GitHub</button>
+              </a>
             </div>
             <img src={contact} alt="" />
           </li>
