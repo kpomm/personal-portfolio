@@ -17,6 +17,7 @@ function NavBar() {
             </NavLink>
           </li>
           <li className="nav-right"><NavLink to="/contact-me">contact me</NavLink></li>
+          <li className="nav-right"><a href="google.com">resume</a></li>
           <li className="nav-right"><NavLink to="/projects">projects</NavLink></li>
           <li className="nav-right"><NavLink to="/photos">photos</NavLink></li>
         </ul>

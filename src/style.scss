@@ -215,20 +215,6 @@ li > img {
 	color: #a77ce4;
 }
 
-/* elements from the following tutorial */
-/* https://unused-css.com/blog/css-only-hamburger-menu/ */
-.hamburger-container {
-	width: 100%;
-	height: 8vh;
-	background-color: none;
-	padding: 0;
-}
-
-.hamburger-container > input,
-.hamburger {
-	visibility: hidden;
-}
-
 /* navigation bar */
 /* modified code from here, but used display: flex instead for more ease of use */
 /* https://www.w3schools.com/css/css_navbar.asp */
@@ -275,6 +261,7 @@ ul.nav-list > li a {
 .nav-right > a:hover {
 	color: #a77ce4;
 }
+
 
 .hover-underline:hover {
 	text-decoration: underline;
