@@ -11,7 +11,7 @@ export default defineConfig({
   base: '/',
   plugins: [
     eslint(),
-    vitePluginFaviconsInject('./src/img/unsplash-kitten.jpg'),
+    vitePluginFaviconsInject('./src/img/logo.png'),
   ],
   css: {
     postcss: {
