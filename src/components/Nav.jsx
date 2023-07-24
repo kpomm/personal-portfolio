@@ -2,6 +2,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../img/logo.svg';
+import resume from '../docs/resume.pdf';
 
 function NavBar() {
   return (
@@ -17,7 +18,16 @@ function NavBar() {
             </NavLink>
           </li>
           <li className="nav-right"><NavLink to="/contact-me">contact me</NavLink></li>
-          <li className="nav-right"><a href="google.com">resume</a></li>
+          <li className="nav-right">
+            <a
+              href={resume}
+              target="_blank"
+              rel="noreferrer"
+            >
+              resume
+            </a>
+
+          </li>
           <li className="nav-right"><NavLink to="/projects">projects</NavLink></li>
           <li className="nav-right"><NavLink to="/photos">photos</NavLink></li>
         </ul>
