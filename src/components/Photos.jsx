@@ -1,31 +1,35 @@
 import React from 'react';
 import images from '../photogrid';
 
-function Photos() {
+function Photos(props) {
+  // { items.map((item) => (
+  //   <motion.div layoutId={item.id} onClick={() => setSelectedId(item.id)}>
+  //     <motion.h5>{item.subtitle}</motion.h5>
+  //     <motion.h2>{item.title}</motion.h2>
+  //   </motion.div>
+  // )); }
+
+  //   <AnimatePresence>
+  //     {selectedId && (
+  //     <motion.div layoutId={selectedId}>
+  //       <motion.h5>{item.subtitle}</motion.h5>
+  //       <motion.h2>{item.title}</motion.h2>
+  //       <motion.button onClick={() => setSelectedId(null)} />
+  //     </motion.div>
+  //     )}
+  //   </AnimatePresence>;
+  const imgList = images.map((item) => (
+    // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
+    <img id={item.id} key={item.id} src={item.image} alt="" />
+  ));
+
   return (
     <div>
       <div className="text-section">
         <h2>here are my photos!</h2>
       </div>
       <div className="photo-grid">
-        <img src={images.a} alt="" />
-        <img src={images.b} alt="" />
-        <img src={images.c} alt="" />
-        <img src={images.d} alt="" />
-        <img src={images.e} alt="" />
-        <img src={images.f} alt="" />
-        <img src={images.g} alt="" />
-        <img src={images.h} alt="" />
-        <img src={images.i} alt="" />
-        <img src={images.j} alt="" />
-        <img src={images.k} alt="" />
-        <img src={images.l} alt="" />
-        <img src={images.m} alt="" />
-        <img src={images.n} alt="" />
-        <img src={images.o} alt="" />
-        <img src={images.p} alt="" />
-        <img src={images.q} alt="" />
-        <img src={images.r} alt="" />
+        {imgList}
       </div>
     </div>
   );

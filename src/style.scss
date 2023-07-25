@@ -283,15 +283,17 @@ ul.nav-list > li a {
 	padding: 0% 6% 0% 6%;
 }
 
-.photo-grid > img {
-	margin-bottom: 10%;
+.photo-grid img {
+	margin: 1%;
 	max-width: 40vw;
+	// max-height: 40vh;
+	width: auto;
+	height: auto;
 	transition-duration: 0.2s;
 	transition-timing-function: ease-in;
-	overflow: hidden;
 }
 
-.photo-grid > img:hover {
+.photo-grid img:hover {
 	transform: translateY(-5px);
 	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.75);
 }

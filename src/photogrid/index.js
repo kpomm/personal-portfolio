@@ -17,25 +17,79 @@ import p from './18.jpg';
 import q from './19.jpg';
 import r from './20.jpg';
 
-const images = {
-  a,
-  b,
-  c,
-  d,
-  e,
-  f,
-  g,
-  h,
-  i,
-  j,
-  k,
-  l,
-  m,
-  n,
-  o,
-  p,
-  q,
-  r,
-};
+const images = [
+  {
+    id: 1,
+    image: a,
+  },
+  {
+    id: 2,
+    image: b,
+  },
+  {
+    id: 3,
+    image: c,
+  },
+  {
+    id: 4,
+    image: d,
+  },
+  {
+    id: 5,
+    image: e,
+  },
+  {
+    id: 6,
+    image: f,
+  },
+  {
+    id: 7,
+    image: g,
+  },
+  {
+    id: 8,
+    image: h,
+  },
+  {
+    id: 9,
+    image: i,
+  },
+  {
+    id: 10,
+    image: j,
+  },
+  {
+    id: 11,
+    image: k,
+  },
+  {
+    id: 12,
+    image: l,
+  },
+  {
+    id: 13,
+    image: m,
+  },
+  {
+    id: 14,
+    image: n,
+  },
+  {
+    id: 15,
+    image: o,
+  },
+  {
+    id: 16,
+    image: p,
+  },
+  {
+    id: 17,
+    image: q,
+  },
+  {
+    id: 18,
+    image: r,
+  },
+];
 
 export default images;
