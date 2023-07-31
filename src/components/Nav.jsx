@@ -30,6 +30,15 @@ function NavBar() {
           </li>
           <li className="nav-right"><NavLink to="/projects">projects</NavLink></li>
           <li className="nav-right"><NavLink to="/photos">photos</NavLink></li>
+          <li className="dropdown nav-right">
+            <div className="dropbtn">
+              apis
+              <i className="fa fa-caret-down" />
+            </div>
+            <div className="dropdown-content">
+              <NavLink className="dropdown-listitem" to="/apod">apod (nasa)</NavLink>
+            </div>
+          </li>
         </ul>
       </div>
     </nav>

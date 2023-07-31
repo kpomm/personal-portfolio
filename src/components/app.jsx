@@ -8,6 +8,7 @@ import Landing from './Landing';
 import Photos from './Photos';
 import Projects from './Projects';
 import ContactMe from './ContactMe';
+import Apod from './Apod';
 
 // function Test(props) {
 //   const { id } = useParams();
@@ -53,6 +54,7 @@ function App(props) {
           <Route path="/photos" element={<Photos />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact-me" element={<ContactMe />} />
+          <Route path="/apod" element={<Apod />} />
         </Routes>
       </div>
     </BrowserRouter>
