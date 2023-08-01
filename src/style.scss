@@ -1,10 +1,11 @@
 /* doing imports in css to keep all the styling away from the html */
-@import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200;300;400;500;600&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* from class */
 html {
 	box-sizing: border-box;
 	font-size: 16px;
+	overflow-x: hidden;
 }
 
 *,
@@ -161,7 +162,7 @@ li > img {
 
 .half-element {
 	width: 40%;
-	height: 70%;
+	height: 80%;
 	overflow: hidden;
 }
 
@@ -221,10 +222,11 @@ li > img {
 /* https://www.w3schools.com/css/css_navbar.asp */
 ul.nav-list {
 	z-index: 10;
+	font-weight: 300;
 	list-style-type: none;
 	margin: 0;
-	padding-left: 5%;
-	padding-right: 5%;
+	padding-left: 5.9%;
+	padding-right: 5.9%;
 	position: fixed;
 	top: 0;
 	height: 10vh;
@@ -237,7 +239,6 @@ ul.nav-list {
 /* modified code from here */
 /* https://www.w3schools.com/css/css_navbar.asp */
 ul.nav-list > li a {
-	display: block;
 	font-size: 1.3rem;
 	padding: 20px;
 	float: left;
@@ -245,6 +246,30 @@ ul.nav-list > li a {
 	color: #4b4453;
 	transition-duration: 0.15s;
 	transition-timing-function: linear;
+}
+
+ul.nav-list > li a:hover {
+	color: #a77ce4;
+}
+
+.nav-button a {
+	display: block;
+	font-size: 1.3rem;
+	text-decoration: none;
+	margin: 10px;
+	padding: 7px;
+	border-style: solid;
+	border-width: 3px;
+	border-radius: 5px;
+	border-color: #a77ce4;
+	color: #a77ce4;
+	transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+	transition-duration: 0.3s;
+}
+
+.nav-button a:hover {
+	background-color: #a77ce4;
+	color: #fcf8ff;
 }
 
 #below-nav-bar {
@@ -258,10 +283,6 @@ ul.nav-list > li a {
 
 .nav-right {
 	float: right;
-}
-
-.nav-right > a:hover {
-	color: #a77ce4;
 }
 
 
@@ -433,23 +454,6 @@ a > button {
 	.columns {
 		flex-direction: column;
 		align-items: center;
-	}
-
-	/* this section modifies main structural elements that define my page */
-	.half-element {
-		width: 80%;
-	}
-
-	.fact {
-		width: 80%;
-	}
-
-	.person {
-		width: 100%;
-	}
-
-	.place {
-		width: 90%;
 	}
 }
 

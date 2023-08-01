@@ -17,8 +17,7 @@ function NavBar() {
               <img id="nav-logo" src={logo} alt="" />
             </NavLink>
           </li>
-          <li className="nav-right"><NavLink to="/contact-me">contact me</NavLink></li>
-          <li className="nav-right">
+          <div className="nav-button nav-right">
             <a
               href={resume}
               target="_blank"
@@ -26,8 +25,8 @@ function NavBar() {
             >
               resume
             </a>
-
-          </li>
+          </div>
+          <li className="nav-right"><NavLink to="/contact-me">contact me</NavLink></li>
           <li className="nav-right"><NavLink to="/projects">projects</NavLink></li>
           <li className="nav-right"><NavLink to="/photos">photos</NavLink></li>
           <li className="dropdown nav-right">
