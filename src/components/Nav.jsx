@@ -32,7 +32,7 @@ function NavBar() {
           <li className="nav-right"><NavLink to="/photos">photos</NavLink></li>
           <li className="dropdown nav-right">
             <div className="dropbtn">
-              apis
+              apis i like
               <i className="fa fa-caret-down" />
             </div>
             <div className="dropdown-content">

@@ -179,6 +179,7 @@ li > img {
 .shadow-element:hover {
 	transform: translateY(-10px);
 	box-shadow: 0px 10px 15px 0px #4b4453;
+	z-index: 5;
 }
 
 .img-cover {
@@ -219,6 +220,7 @@ li > img {
 /* modified code from here, but used display: flex instead for more ease of use */
 /* https://www.w3schools.com/css/css_navbar.asp */
 ul.nav-list {
+	z-index: 10;
 	list-style-type: none;
 	margin: 0;
 	padding-left: 5%;
@@ -473,6 +475,10 @@ a > button {
 	background-color: inherit;
 	font-family: inherit; /* Important for vertical align on mobile phones */
 	margin: 0; /* Important for vertical align on mobile phones */
+  }
+
+  .dropbtn:hover {
+	cursor: pointer;
   }
   
   .navbar a:hover, .dropdown:hover .dropbtn {
