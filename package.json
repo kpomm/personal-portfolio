@@ -36,7 +36,7 @@
     "axios": "^1.4.0",
     "babel-plugin-macros": "^3.1.0",
     "cloudinary": "^1.38.0",
-    "framer-motion": "^10.13.1",
+    "framer-motion": "^10.15.0",
     "jquery": "^3.6.4",
     "lodash.debounce": "^4.0.8",
     "react": "^18.2.0",
