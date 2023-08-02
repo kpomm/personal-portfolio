@@ -9,6 +9,7 @@ import Photos from './Photos';
 import Projects from './Projects';
 import ContactMe from './ContactMe';
 import Apod from './Apod';
+import Particle from './Particle';
 
 // function Test(props) {
 //   const { id } = useParams();
@@ -43,21 +44,24 @@ import Apod from './Apod';
 // app
 function App(props) {
   return (
-    <BrowserRouter>
-      <div>
-        <Nav />
-        <Routes>
-          <Route
-            path="/"
-            element={<Landing />}
-          />
-          <Route path="/photos" element={<Photos />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact-me" element={<ContactMe />} />
-          <Route path="/apod" element={<Apod />} />
-        </Routes>
-      </div>
-    </BrowserRouter>
+    <div>
+      <BrowserRouter>
+        <div>
+          <Nav />
+          <Routes>
+            <Route
+              path="/"
+              element={<Landing />}
+            />
+            <Route path="/photos" element={<Photos />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact-me" element={<ContactMe />} />
+            <Route path="/apod" element={<Apod />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
+      <Particle />
+    </div>
   );
 }
 

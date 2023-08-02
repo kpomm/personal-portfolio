@@ -35,10 +35,6 @@ function Landing() {
           </li>
         </ul>
         <IoIosArrowDown className="centered-icon" />
-        {/* <i
-          className="fa-solid fa-angle-down fa-2xl centered-icon"
-          style="color: #4b4453"
-        /> */}
       </div>
 
       <div className="section" id="physics">
