@@ -52,12 +52,13 @@ function Particle() {
         particles: {
           color: {
             value: '#ffffff',
+            opacity: 0.2,
           },
           links: {
             color: '#ffffff',
             distance: 150,
             enable: true,
-            opacity: 0.5,
+            opacity: 0.3,
             width: 1,
           },
           move: {
@@ -75,10 +76,10 @@ function Particle() {
               enable: true,
               area: 800,
             },
-            value: 35,
+            value: 40,
           },
           opacity: {
-            value: 0.5,
+            value: 0.3,
           },
           shape: {
             type: 'circle',
