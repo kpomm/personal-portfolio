@@ -11,7 +11,7 @@ export default defineConfig({
   base: '/',
   plugins: [
     eslint(),
-    vitePluginFaviconsInject('./src/img/logo.svg'),
+    vitePluginFaviconsInject('./src/img/logo.png'),
   ],
   css: {
     postcss: {
