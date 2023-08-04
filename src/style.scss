@@ -5,8 +5,9 @@
 // $base-color: #fcf8ff;
 // $accent-color: #4b4453;
 // $accent-color2: #a77ce4;
-$base-color: #2a2a2f;
-$accent-color: #e8f3ed;
+// $base-color: #2a2a2f;
+$base-color: #4f4f5a;
+$accent-color: #eff5f2;
 $accent-color2: #89faa1;
 $shadow-color: rgb(9, 9, 10);
 
@@ -186,7 +187,8 @@ li > img {
 
 .rounded-element {
 	border-radius: 20px;
-	background-color: $base-color;
+	// background-color: $base-color;
+	background: none;
 }
 
 .shadow-element {
@@ -224,7 +226,11 @@ li > img {
 #nav-logo {
 	width: 40px;
 	height: 40px;
-	margin-bottom: 4%;
+}
+
+a#logo.active{
+	margin-top: 10px;
+	padding-top: 5px;
 }
 
 #logo-larger {
@@ -248,7 +254,7 @@ ul.nav-list {
 	padding-right: 5.9%;
 	position: fixed;
 	top: 0;
-	height: 10vh;
+	height: 8vh;
 	background-color: $base-color;
 	flex-shrink: 0;
 	width: 100%;
@@ -347,12 +353,17 @@ ul.nav-list > li a:hover {
 button {
 	border: none;
 	border-radius: 50px;
-	transition-timing-function: ease-in;
-	transition-duration: 0.1s;
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.08s;
 }
 
 button:hover {
 	background-color: $accent-color2;
+	transform: translateY(-0.25rem)
+}
+
+button:focus {
+	transform: translateY(0.1rem)
 }
 
 a > button {
@@ -536,4 +547,8 @@ a > button {
 	z-index: -1;
 	position: fixed;
 	width: 100%;
+  }
+
+  .hover-carousel {
+	margin: 7%;
   }

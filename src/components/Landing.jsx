@@ -27,10 +27,10 @@ function Landing() {
               <a href="#programming">programming</a>
             </h2>
             <h2>
-              <a href="#photography">photography</a>
+              <a href="#design">design</a>
             </h2>
             <h2>
-              <a href="#design">design</a>
+              <a href="#photography">photography</a>
             </h2>
           </li>
         </ul>
@@ -68,7 +68,7 @@ function Landing() {
       </div>
       <div className="section" id="programming">
         <ul className="columns smaller-columns">
-          <li className="half-element rounded-element shadow-element">
+          <li className="half-element rounded-element">
             <img className="img-contain" src={programming} alt="" />
           </li>
           <li className="half-element align-left">
@@ -88,29 +88,8 @@ function Landing() {
           </li>
         </ul>
       </div>
-      <div className="section" id="photography">
-        <ul className="columns smaller-columns">
-          <li className="half-element align-left">
-            <h2>photography</h2>
-            <p>
-              i've been taking pictures since 2019. over my gap year before
-              college, i worked a lot of freelance and took a roadtrip that
-              culminated in a lot of awesome pictures. i still take a lot of
-              pictures but now work primarily in 35mm and 120mm film. i still
-              carry a small digital camera on me, and primarily focus on street
-              photography!
-            </p>
-          </li>
-          <li className="half-element rounded-element shadow-element">
-            <img href="photos.html" className="img-cover" src={photography} alt="" />
-          </li>
-        </ul>
-      </div>
       <div className="section" id="design">
         <ul className="columns smaller-columns">
-          <li className="half-element rounded-element shadow-element">
-            <img className="img-contain" src={design} alt="" />
-          </li>
           <li className="half-element align-left">
             <h2>design</h2>
             <p>
@@ -126,6 +105,27 @@ function Landing() {
               >
                 check out my figma
               </a>
+            </p>
+          </li>
+          <li className="half-element">
+            <img className="img-contain" src={design} alt="" />
+          </li>
+        </ul>
+      </div>
+      <div className="section" id="photography">
+        <ul className="columns smaller-columns">
+          <li className="half-element rounded-element shadow-element">
+            <img href="photos.html" className="img-cover" src={photography} alt="" />
+          </li>
+          <li className="half-element align-left">
+            <h2>photography</h2>
+            <p>
+              i've been taking pictures since 2019. over my gap year before
+              college, i worked a lot of freelance and took a roadtrip that
+              culminated in a lot of awesome pictures. i still take a lot of
+              pictures but now work primarily in 35mm and 120mm film. i still
+              carry a small digital camera on me, and primarily focus on street
+              photography!
             </p>
           </li>
         </ul>

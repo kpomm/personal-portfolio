@@ -23,7 +23,7 @@ function Particle() {
       options={{
         background: {
           color: {
-            value: '#2a2a2f',
+            value: '#4f4f5a',
           },
         },
         fpsLimit: 120,

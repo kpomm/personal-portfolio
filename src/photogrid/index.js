@@ -17,79 +17,102 @@ import p from './18.jpg';
 import q from './19.jpg';
 import r from './20.jpg';
 
-const images = [
-  {
-    id: 1,
-    image: a,
-  },
-  {
-    id: 2,
-    image: b,
-  },
-  {
-    id: 3,
-    image: c,
-  },
-  {
-    id: 4,
-    image: d,
-  },
-  {
-    id: 5,
-    image: e,
-  },
-  {
-    id: 6,
-    image: f,
-  },
-  {
-    id: 7,
-    image: g,
-  },
-  {
-    id: 8,
-    image: h,
-  },
-  {
-    id: 9,
-    image: i,
-  },
-  {
-    id: 10,
-    image: j,
-  },
-  {
-    id: 11,
-    image: k,
-  },
-  {
-    id: 12,
-    image: l,
-  },
-  {
-    id: 13,
-    image: m,
-  },
-  {
-    id: 14,
-    image: n,
-  },
-  {
-    id: 15,
-    image: o,
-  },
-  {
-    id: 16,
-    image: p,
-  },
-  {
-    id: 17,
-    image: q,
-  },
-  {
-    id: 18,
-    image: r,
-  },
+const imageList = [
+  a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r,
 ];
+// const imageList = [
+//   {
+//     id: 1,
+//     original: a,
+//     loading: 'eager',
+//     originalHeight: '500px',
+//   },
+//   {
+//     id: 2,
+//     original: b,
+//     loading: 'lazy',
+//     originalHeight: '500px',
+//   },
+//   {
+//     id: 3,
+//     original: c,
+//     originalHeight: '500px',
+//   },
+//   {
+//     id: 4,
+//     original: d,
+//     originalHeight: '500px',
+//   },
+//   {
+//     id: 5,
+//     original: e,
+//     originalHeight: '500px',
+//   },
+//   {
+//     id: 6,
+//     original: f,
+//     originalHeight: '500px',
+//   },
+//   {
+//     id: 7,
+//     original: g,
+//     originalHeight: '500px',
+//   },
+//   {
+//     id: 8,
+//     original: h,
+//     originalHeight: '500px',
+//   },
+//   {
+//     id: 9,
+//     original: i,
+//     originalHeight: '500px',
+//   },
+//   {
+//     id: 10,
+//     original: j,
+//     originalHeight: '500px',
+//   },
+//   {
+//     id: 11,
+//     original: k,
+//     originalHeight: '500px',
+//   },
+//   {
+//     id: 12,
+//     original: l,
+//     originalHeight: '500px',
+//   },
+//   {
+//     id: 13,
+//     original: m,
+//     originalHeight: '500px',
+//   },
+//   {
+//     id: 14,
+//     original: n,
+//     originalHeight: '500px',
+//   },
+//   {
+//     id: 15,
+//     original: o,
+//     originalHeight: '500px',
+//   },
+//   {
+//     id: 16,
+//     original: p,
+//     originalHeight: '500px',
+//   },
+//   {
+//     id: 17,
+//     original: q,
+//     originalHeight: '500px',
+//   },
+//   {
+//     id: 18,
+//     original: r,
+//     originalHeight: '500px',
+//   },
+// ];
 
-export default images;
+export default imageList;
