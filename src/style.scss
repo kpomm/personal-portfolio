@@ -1,6 +1,7 @@
 /* doing imports in css to keep all the styling away from the html */
 @import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200;300;400;500;600&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Rubik:ital,wght@0,300;0,400;0,500;1,400&display=swap');
 
+
 // colors! 
 // $base-color: #fcf8ff;
 // $accent-color: #4b4453;
@@ -315,13 +316,13 @@ ul.nav-list > li a:hover {
 }
 
 /* photogrid stuff */
-.photo-grid {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	padding: 0% 6% 0% 6%;
-}
+// .photo-grid {
+// 	display: flex;
+// 	flex-direction: row;
+// 	justify-content: space-between;
+// 	flex-wrap: wrap;
+// 	padding: 0% 6% 0% 6%;
+// }
 
 .photo-grid img {
 	margin: 1%;
@@ -543,12 +544,39 @@ a > button {
 	display: block;
   }
 
+  // particles bg settings 
   #tsparticles {
 	z-index: -1;
 	position: fixed;
 	width: 100%;
   }
 
-  .hover-carousel {
-	margin: 7%;
+
+  // img slider settings 
+  .react-slider {
+	padding-top: 9%;
+	z-index: 10;
+  }
+  .react-slider img {
+	height: 70vh;
+	width: auto;
+	margin: auto;
+  }
+
+  .img-container {
+	padding: auto;
+  }
+
+  // slick settings 
+  .slick-prev {
+	left: 3% !important;
+	z-index: 1;
+  }
+  .slick-next {
+	right: 3% !important;
+	z-index: 1;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color:White !important; 
   }

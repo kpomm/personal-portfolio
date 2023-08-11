@@ -1,17 +1,15 @@
 import React from 'react';
-import Carousel from './Carousel';
+// import Carousel from './Carousel';
+import LazyLoad from './PhotoCarousel';
 
 function Photos(props) {
   return (
     <div>
-      <div className="text-section">
-        <h2>here are my photos!</h2>
+      <div className="react-slider">
+        <LazyLoad />
       </div>
-      {/* <div className="photo-grid">
-        {imageList}
-      </div> */}
       <div>
-        <Carousel />
+        {/* <Carousel /> */}
       </div>
     </div>
   );
