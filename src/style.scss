@@ -390,8 +390,13 @@ a > button {
 /* from course website */
 @media (max-width: 640px) {
 	/* centering all content on the website  */
-	.section {
-		justify-content: center;
+
+	.half-element {
+		width: 90%;
+		overflow-x: hidden;
+	}
+	.columns {
+		flex-direction: column;
 	}
 
 	ul.nav-list {
@@ -471,12 +476,6 @@ a > button {
 	/* from same tutorial */
 	.hamburger-container .checkbox:checked ~ .nav-stuff a {
 		visibility: visible;
-	}
-
-	/* make flex columns for mobile! */
-	.columns {
-		flex-direction: column;
-		align-items: center;
 	}
 }
 
