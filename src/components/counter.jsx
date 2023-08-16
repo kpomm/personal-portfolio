@@ -5,7 +5,9 @@ function Counter(props) {
   const count = useSelector((store) => store.count);
   return (
     <div>
-      Current Count: {count}
+      Current Count:
+      {' '}
+      {count}
     </div>
   );
 }

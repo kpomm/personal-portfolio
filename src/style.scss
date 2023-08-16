@@ -188,7 +188,6 @@ li > img {
 
 .rounded-element {
 	border-radius: 20px;
-	// background-color: $base-color;
 	background: none;
 }
 
@@ -196,6 +195,7 @@ li > img {
 	box-shadow: 0px 5px 10px 0px $shadow-color;
 	transition-timing-function: ease-in;
 	transition-duration: 0.15s;
+	background-color: $base-color;
 }
 
 .shadow-element:hover {
@@ -303,6 +303,14 @@ ul.nav-list > li a:hover {
 	float: right;
 }
 
+#below-nav-bar {
+	width: 100%;
+	height: 3vh;
+	position: fixed;
+	top: 8vh;
+	background: linear-gradient($base-color, #00000000);
+  }
+
 
 .hover-underline:hover {
 	text-decoration: underline;
@@ -385,6 +393,11 @@ a > button {
 .apod {
 	padding-left: 5%;
 	padding-right: 5%;
+}
+
+.apod p {
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 /* from course website */
