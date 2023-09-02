@@ -19,8 +19,9 @@
         "arrow-body-style": 0,
         "one-var": ["error", { "uninitialized": "always", "initialized": "never" }],
         "one-var-declaration-per-line": ["error", "initializations"],
-        "max-len": ["error", 200],
+        "max-len": ["error", 500],
         "no-extra-parens": 0,
         "no-restricted-syntax": [0, "DebuggerStatement"],
-        "no-debugger": "warn"
+        "no-debugger": "warn",
+        "react/prop-types": ["off"]
     }}

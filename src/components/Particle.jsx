@@ -23,14 +23,14 @@ function Particle() {
       options={{
         background: {
           color: {
-            value: '#4f4f5a',
+            value: '#404049',
           },
         },
         fpsLimit: 120,
         interactivity: {
           events: {
             onClick: {
-              enable: true,
+              enable: false,
               mode: 'push',
             },
             onHover: {
@@ -76,7 +76,7 @@ function Particle() {
               enable: true,
               area: 800,
             },
-            value: 40,
+            value: 30,
           },
           opacity: {
             value: 0.3,
