@@ -24,7 +24,7 @@ function ProjectDetail({ project }) {
       <h4><a href={project.repoLink}>Github Link</a></h4>
       <h4>
         <a href={project.siteLink}>
-          {project.siteLink}
+          <a href={project.siteLink}>Site Link</a>
         </a>
       </h4>
     </div>
