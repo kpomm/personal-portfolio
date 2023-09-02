@@ -20,7 +20,7 @@ const projectDB = [
     skills: 'React Native, Expo, X-Code, APIs, Firebase',
     img: MeU,
     repoLink: 'https://github.com/georgia-dawahare/MeU',
-    siteLink: null,
+    siteLink: 'https://expo.dev/@projectmeu/project-meu?serviceType=classic&distribution=expo-go',
   },
 ];
 
