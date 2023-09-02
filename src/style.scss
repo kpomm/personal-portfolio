@@ -9,6 +9,7 @@
 // $base-color: #2a2a2f;
 // $base-color: #4f4f5a;
 $base-color: #404049;
+$lighter-base-color: #676775;
 $accent-color: #eff5f2;
 $accent-color2: #89faa1;
 $shadow-color: #313138;
@@ -415,6 +416,7 @@ button {
 	border-radius: 50px;
 	transition-timing-function: ease-in-out;
 	transition-duration: 0.08s;
+	font-family: "Raleway";
 }
 
 button:hover {
@@ -699,4 +701,28 @@ a > button {
   #project-detail img {
 	width: 100px;
 	height: 100px;
+  }
+
+  .project-footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+  }
+
+  .project-footer h4 {
+	margin-top: 2%;
+  }
+
+  .project-button {
+	height: 5vh;
+	width: 6vw;
+	background-color: $lighter-base-color;
+	border-radius: 5px;
+	border-color: $accent-color2;
+	color: $accent-color;
+  }
+
+  .project-button:hover {
+	color: $base-color;
+	background-color: $accent-color;
   }

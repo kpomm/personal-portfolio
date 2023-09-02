@@ -13,7 +13,7 @@ function ProjectListItem(props) {
   console.log(props.project.img);
   if (props.project.siteLink != null) {
     return (
-      <li className="project-list-item rounded-element shadow-element" onClick={() => props.onProjectSelect(props.project)}>
+      <li className="project-list-item rounded-element shadow-element">
         <div className="project-list-item-header">
           <h3>{project.title}</h3>
           <img src={project.img} alt="" />
@@ -28,14 +28,17 @@ function ProjectListItem(props) {
         <h4>
           <a href={project.repoLink}>Github Link</a>
         </h4>
-        <h4>
-          <a href={project.siteLink}>Site Link</a>
-        </h4>
+        <div className="project-footer">
+          <h4>
+            <a href={project.siteLink}>Site Link</a>
+          </h4>
+          <button className="project-button shadow-element" type="submit" onClick={() => props.onProjectSelect(props.project)}>Learn More</button>
+        </div>
       </li>
     );
   } else {
     return (
-      <li className="project-list-item rounded-element shadow-element" onClick={() => props.onProjectSelect(props.project)}>
+      <li className="project-list-item rounded-element shadow-element">
         <div className="project-list-item-header">
           <h3>{project.title}</h3>
           <img src={project.img} alt="" />
@@ -50,6 +53,12 @@ function ProjectListItem(props) {
         <h4>
           <a href={project.repoLink}>Github Link</a>
         </h4>
+        <div className="project-footer">
+          <h4>
+            <a href={project.siteLink}> </a>
+          </h4>
+          <button className="project-button shadow-element" type="submit" onClick={() => props.onProjectSelect(props.project)}>Learn More</button>
+        </div>
       </li>
     );
   }
