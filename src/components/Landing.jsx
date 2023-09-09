@@ -39,7 +39,7 @@ function Landing() {
 
       <div className="section" id="physics">
         <ul className="columns smaller-columns">
-          <li className="half-element align-left">
+          <li className="half-element align-left glass-element">
             <h2>physics</h2>
             <p>
               As a researcher in Dartmouth's Physics Department, I'm very
@@ -62,7 +62,7 @@ function Landing() {
               </a>
             </p>
           </li>
-          <li className="half-element rounded-element shadow-element">
+          <li className="half-element img-element rounded-element shadow-element">
             <img className="img-cover" src={cptwn} alt="" />
           </li>
         </ul>
@@ -72,7 +72,7 @@ function Landing() {
           <li className="half-element rounded-element">
             <img className="img-contain" src={programming} alt="" />
           </li>
-          <li className="half-element align-left">
+          <li className="half-element align-left glass-element">
             <h2>programming</h2>
             <p>
               I am a dartmouth 25 majoring in computer science modified with
@@ -91,7 +91,7 @@ function Landing() {
       </div>
       <div className="section" id="design">
         <ul className="columns smaller-columns">
-          <li className="half-element align-left">
+          <li className="half-element align-left glass-element">
             <h2>design</h2>
             <p>
               More recently, I explored my interest in UI/UX design. taking
@@ -116,10 +116,10 @@ function Landing() {
       </div>
       <div className="section" id="photography">
         <ul className="columns smaller-columns">
-          <li className="half-element rounded-element shadow-element">
+          <li className="img-element rounded-element shadow-element">
             <img href="photos.html" className="img-cover" src={photography} alt="" />
           </li>
-          <li className="half-element align-left">
+          <li className="half-element align-left glass-element">
             <h2>photography</h2>
             <p>
               I've been taking pictures since 2019. Over my gap year before

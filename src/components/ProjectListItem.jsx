@@ -13,7 +13,7 @@ function ProjectListItem(props) {
   console.log(props.project.img);
   if (props.project.siteLink != null) {
     return (
-      <li className="project-list-item rounded-element shadow-element">
+      <li className="project-list-item rounded-element glass-element">
         <div className="project-list-item-header">
           <h3>{project.title}</h3>
           <img src={project.img} alt="" />
@@ -38,7 +38,7 @@ function ProjectListItem(props) {
     );
   } else {
     return (
-      <li className="project-list-item rounded-element shadow-element">
+      <li className="project-list-item rounded-element shadow-element glass-element">
         <div className="project-list-item-header">
           <h3>{project.title}</h3>
           <img src={project.img} alt="" />

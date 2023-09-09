@@ -8,7 +8,7 @@ function ProjectDetail({ project }) {
   }
 
   return (
-    <div id="project-detail" className="rounded-element shadow-element">
+    <div id="project-detail" className="rounded-element glass-element">
       <div className="project-list-item-header">
         <h2>{project.title}</h2>
         <img src={project.img} alt="" />

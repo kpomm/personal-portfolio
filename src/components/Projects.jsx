@@ -10,7 +10,6 @@ function Projects() {
   console.log('selected project', selectedProject);
   return (
     <div id="project-container">
-      <h2>Recent Projects</h2>
       <div id="project-inner-container">
         <div id="project-detail-container">
           <ProjectDetail project={selectedProject} />
