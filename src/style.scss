@@ -200,7 +200,7 @@ li > img {
 }
 
 .rounded-element {
-	border-radius: 10px;
+	border-radius: 15px;
 	background: none;
 }
 
@@ -208,7 +208,7 @@ li > img {
 	background: rgba( 64, 64, 73, 0.2 );
 	backdrop-filter: blur( 6px );
 	-webkit-backdrop-filter: blur( 6px );
-	border-radius: 10px;
+	border-radius: 15px;
 	padding: 0% 3% 3% 3%;
 	border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
@@ -224,6 +224,10 @@ li > img {
 	transform: translateY(-3px);
 	box-shadow: 0px 10px 15px 0px $shadow-color;
 	z-index: 5;
+}
+
+.padding-top {
+	padding-top: 10vh;
 }
 
 .img-cover {
@@ -382,9 +386,10 @@ ul.nav-list > li a:hover {
 
 #contact-me {
 	height: 80vh;
-	display: block;
+	display: flex;
 	justify-content: center;
-	margin-top: 10%;
+	align-items: center;
+	margin-bottom: 5%;
 }
 
 #contact-me h2 {
@@ -403,7 +408,6 @@ ul.nav-list > li a:hover {
 .panel {
 	width: 25rem;
 	height: auto;
-	background-color: $base-color;
 	padding: 1%;
 	margin: 1%;
 }
@@ -735,8 +739,9 @@ a > button {
 
   .project-button {
 	height: 5vh;
-	width: 6vw;
-	background-color: $lighter-base-color;
+	width: auto;
+	font-size: 1.1rem;
+	padding: 1vh;
 	border-radius: 5px;
 	border-color: $accent-color2;
 	color: $accent-color;
@@ -744,5 +749,6 @@ a > button {
 
   .project-button:hover {
 	color: $base-color;
-	background-color: $accent-color;
+	background-color: $accent-color2;
+	transform: translateY(0);
   }

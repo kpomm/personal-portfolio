@@ -28,7 +28,7 @@ export default class LazyLoad extends Component {
     ));
 
     return (
-      <div>
+      <div id="photo-carousel">
         <Slider {...settings}>
           {images}
         </Slider>

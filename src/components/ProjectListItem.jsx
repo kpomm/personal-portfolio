@@ -32,7 +32,7 @@ function ProjectListItem(props) {
           <h4>
             <a href={project.siteLink}>Site Link</a>
           </h4>
-          <button className="project-button shadow-element" type="submit" onClick={() => props.onProjectSelect(props.project)}>Learn More</button>
+          <button className="project-button glass-element" type="submit" onClick={() => props.onProjectSelect(props.project)}>Learn More</button>
         </div>
       </li>
     );
