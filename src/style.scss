@@ -287,8 +287,11 @@ ul.nav-list {
 	padding-right: 5.9%;
 	position: fixed;
 	top: 0;
-	height: 8vh;
-	background-color: $base-color;
+	height: 9vh;
+	// background-color: $base-color;
+	background: rgba( 64, 64, 73, 0.9 );
+	backdrop-filter: blur( 15px );
+	-webkit-backdrop-filter: blur( 15px );
 	flex-shrink: 0;
 	width: 100%;
 }
@@ -340,7 +343,8 @@ ul.nav-list > li a:hover {
 	height: 3vh;
 	position: fixed;
 	top: 8vh;
-	background: linear-gradient($base-color, #00000000);
+	background: none;
+	// background: linear-gradient(rgba( 64, 64, 73, 0.9), #00000000);
   }
 
 
