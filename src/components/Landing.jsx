@@ -17,9 +17,14 @@ function Landing() {
           <li className="half-element">
             <img id="profile-pic" src={pfp} alt="" />
             <h1>kpomm</h1>
-            <p>welcome to my website!</p>
+            <div className="glass-element">
+              <p>
+                A rising junior at Dartmouth College interested in software development and UI/UX
+                design.
+              </p>
+            </div>
           </li>
-          <li className="half-element align-right">
+          <li className="half-element align-right" id="nav-landing">
             <h2>
               <a href="#physics">physics</a>
             </h2>
@@ -36,6 +41,17 @@ function Landing() {
         </ul>
         <IoIosArrowDown className="centered-icon" />
       </div>
+
+      {/* <div className="section" id="about-me">
+        <ul className="columns small-columns">
+          <li className="third-element glass-element">
+            <p>
+              I am a rising junior at Dartmouth College majoring in Computer Science Modified with Physics.
+
+            </p>
+          </li>
+        </ul>
+      </div> */}
 
       <div className="section" id="physics">
         <ul className="columns smaller-columns">
@@ -70,7 +86,7 @@ function Landing() {
       <div className="section" id="programming">
         <ul className="columns smaller-columns">
           <li className="half-element rounded-element">
-            <img className="img-contain" src={programming} alt="" />
+            <img className="img-contain vector" src={programming} alt="" />
           </li>
           <li className="half-element align-left glass-element">
             <h2>programming</h2>
@@ -81,7 +97,8 @@ function Landing() {
               I've worked with APIs, React Native, React and a few
               other tools. I have a collection of projects, both independent
               and from the cs52 (full-stack web development) course at Dartmouth
-              that I am very proud of!
+              that I am very proud of! This fall, I am a Creative Technologist Intern for Hume AI,
+              a startup that is working to build empathetic AI tools!
             </p>
             <p>
               <a href="https://github.com/kpomm">github</a>
@@ -110,7 +127,7 @@ function Landing() {
             </p>
           </li>
           <li className="half-element">
-            <img className="img-contain" src={design} alt="" />
+            <img className="img-contain vector" src={design} alt="" />
           </li>
         </ul>
       </div>

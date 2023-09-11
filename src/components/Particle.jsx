@@ -2,6 +2,7 @@
 import React, { useCallback } from 'react';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
+import primaryColor from './colorstorage';
 
 // here I am following the react-tsparticles documentation
 function Particle() {
@@ -23,7 +24,7 @@ function Particle() {
       options={{
         background: {
           color: {
-            value: '#404049',
+            value: primaryColor,
           },
         },
         fpsLimit: 120,
