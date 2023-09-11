@@ -28,6 +28,7 @@ function NavBar() {
               </a>
             </div>
             <li className="nav-right"><NavLink to="/contact-me">contact me</NavLink></li>
+            <li className="nav-right"><NavLink to="/experience">experience</NavLink></li>
             <li className="nav-right"><NavLink to="/projects">projects</NavLink></li>
             <li className="nav-right"><NavLink to="/photos">photos</NavLink></li>
             {/* <li className="dropdown nav-right">
