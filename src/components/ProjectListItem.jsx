@@ -26,7 +26,7 @@ function ProjectListItem(props) {
           {project.skills}
         </h4>
         <h4>
-          <a href={project.repoLink}>Github Link</a>
+          <a href={project.repoLink}>Github/Figma Link</a>
         </h4>
         <div className="project-footer">
           <h4>
@@ -55,9 +55,9 @@ function ProjectListItem(props) {
         </h4>
         <div className="project-footer">
           <h4>
-            <a href={project.siteLink}> </a>
+            <a href={project.siteLink}>No site link</a>
           </h4>
-          <button className="project-button shadow-element" type="submit" onClick={() => props.onProjectSelect(props.project)}>Learn More</button>
+          <button className="project-button glass-element" type="submit" onClick={() => props.onProjectSelect(props.project)}>Learn More</button>
         </div>
       </li>
     );

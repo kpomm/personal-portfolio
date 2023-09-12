@@ -7,6 +7,7 @@ import cptwn from '../img/cptwn.jpg';
 import programming from '../img/programming.svg';
 import photography from '../img/photography.jpg';
 import design from '../img/design.svg';
+import computerGirl from '../img/computerGirl.svg';
 import ContactMe from './ContactMe';
 
 function Landing() {
@@ -57,6 +58,31 @@ function Landing() {
               I am working as a Creative Technologist intern for Hume AI in New York City. Outside of coding
               my hobbies include photography, skateboarding, and exploring the city!
             </p>
+          </li>
+          <li>
+            <img id="about-me-logo" src={computerGirl} alt="" />
+          </li>
+        </ul>
+      </div>
+
+      <div id="skills">
+        <ul className="columns">
+          <li>
+            <h2>skills</h2>
+          </li>
+          <li className="glass-element">
+            <div className="icons">
+              <img className="skill-icon" alt="python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+              <img className="skill-icon" alt="java" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+              <img className="skill-icon" alt="javascript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+              <img className="skill-icon" alt="html" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+              <img className="skill-icon" alt="css" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+              <img className="skill-icon" alt="react" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+              <img className="skill-icon" alt="firebase" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" />
+              <img className="skill-icon" alt="mongodb" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
+              <img className="skill-icon" alt="figma" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
+              <img className="skill-icon" alt="photoshop" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" />
+            </div>
           </li>
         </ul>
       </div>
@@ -158,27 +184,6 @@ function Landing() {
               This fall, I am living and working in New York. Check out my recent stuff from that below!
               You can also check out my photos page, where I keep my favorite pictures.
             </p>
-          </li>
-        </ul>
-      </div>
-      <div id="skills">
-        <ul className="columns">
-          <li>
-            <h2>skills</h2>
-          </li>
-          <li className="glass-element">
-            <div className="icons">
-              <img className="skill-icon" alt="python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
-              <img className="skill-icon" alt="java" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
-              <img className="skill-icon" alt="javascript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-              <img className="skill-icon" alt="html" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-              <img className="skill-icon" alt="css" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-              <img className="skill-icon" alt="react" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-              <img className="skill-icon" alt="firebase" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" />
-              <img className="skill-icon" alt="mongodb" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
-              <img className="skill-icon" alt="figma" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
-              <img className="skill-icon" alt="photoshop" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" />
-            </div>
           </li>
         </ul>
       </div>

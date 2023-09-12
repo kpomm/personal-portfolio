@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../img/logo.svg';
 import github from '../img/github.svg';
 import linkedin from '../img/linkedin.png';
 import email from '../img/gmail-icon-logo.svg';
@@ -8,9 +7,8 @@ import email from '../img/gmail-icon-logo.svg';
 function ContactMe() {
   return (
     <div className="section" id="contact-me">
-      <div className="glass-element half-element padding-top">
-        <div className="flex-row">
-          <img id="logo-larger" src={logo} alt="" />
+      <div className="glass-element">
+        <div>
           <h2>contact me</h2>
         </div>
         <div id="contact-panels">

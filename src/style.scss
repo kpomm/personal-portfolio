@@ -115,7 +115,7 @@ h4 a {
 
 p {
 	color: $accent-color;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 }
 
 p > a {
@@ -195,8 +195,8 @@ header {
 	margin: none;
 	align-items: center;
 	padding: 0;
-	margin-left: 100px;
-	margin-right: 100px;
+	margin-left: 5.9%;
+	margin-right: 5.9%;
 }
 
 .smaller-columns {
@@ -280,6 +280,11 @@ li > img {
 	z-index: 5;
 }
 
+#experience {
+	text-align: left;
+	padding-top: 15vh;
+}
+
 .divider {
 	height: 10vh;
 }
@@ -307,6 +312,11 @@ a#logo{
 	color: $accent-color2;
 }
 
+#about-me-logo {
+	width: 20vw;
+	height: 20vw;
+}
+
 .flex-row {
 	display: flex;
 	flex-direction: row;
@@ -319,8 +329,8 @@ a#logo{
 }
 
 .skill-icon {
-	width: 100px;
-	height: 100px;
+	width: 5.9%;
+	height: 5.9%;
 }
 
 /* navigation bar */
@@ -331,13 +341,13 @@ ul.nav-list {
 	font-weight: 300;
 	list-style-type: none;
 	margin: 0;
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: 5.9%;
+	padding-right: 5.9%;
 	position: fixed;
 	top: 0;
-	height: 9vh;
+	height: 11vh;
 	// background-color: $baseColor;
-	background: rgba($red, $green, $blue, 0.9); /* same as using "background: $color" */
+	background: rgba($red, $green, $blue, 0.7); /* same as using "background: $color" */
 	backdrop-filter: blur( 15px );
 	-webkit-backdrop-filter: blur( 15px );
 	flex-shrink: 0;
@@ -354,7 +364,7 @@ ul.nav-list > li a {
 	float: left;
 	text-decoration: none;
 	color: $accent-color;
-	transition-duration: 0.15s;
+	transition-duration: 0.25s;
 	transition-timing-function: linear;
 }
 
@@ -473,8 +483,8 @@ ul.nav-list > li a:hover {
 .panel {
 	width: 25rem;
 	height: auto;
-	padding: 1%;
-	margin: 1%;
+	margin-top: 2%;
+	margin-bottom: 2%;
 }
 
 .panel img {
@@ -541,98 +551,6 @@ a > button {
 .apod p {
 	margin-left: 10%;
 	margin-right: 10%;
-}
-
-/* from course website */
-@media (max-width: 640px) {
-	/* centering all content on the website  */
-
-	.half-element {
-		width: 90%;
-		overflow-x: hidden;
-	}
-	.columns {
-		flex-direction: column;
-	}
-
-	ul.nav-list {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	/* The below code (HAMBURGER BAR SECTION) was created inspired by the tutorial below. I modified a few things as necessary to fit the aims of my website */
-	/* HOWEVER, I definitely started with the code from this tutorial, I do not take credit */
-	/* https://unused-css.com/blog/css-only-hamburger-menu/ */
-
-	/* This is to make the hamburger menu visible when we change to mobile */
-	.hamburger-container > input,
-	.hamburger {
-		visibility: visible;
-	}
-
-	/* styling the hamburger icon */
-	.hamburger {
-		z-index: 1;
-		position: absolute;
-		top: 1%;
-		right: 0px;
-		margin: 3%;
-		width: 20px;
-		height: 20px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-	}
-
-	/* this is a 'slice' as used in the tutorial, modified to my liking */
-	/* definitely used the css used as a reference point */
-	.hamburger .slice {
-		width: 100%;
-		height: 4px;
-		background: #4895ef;
-	}
-
-	/* checkbox moved to the top right corner where the hamburger is */
-	/* modified boilerplate code */
-	.hamburger-container .checkbox {
-		opacity: 0;
-		position: absolute;
-		top: 0px;
-		right: 0px;
-	}
-
-	/* this sets a starting location for the navigation stuff before we translate it over */
-	/* THIS CODE IS WAS DIRECTLY TAKEN FROM https://unused-css.com/blog/css-only-hamburger-menu/ */
-	/* IT WAS THEN MODIFIED TO MY LIKING */
-	.nav-stuff {
-		position: fixed;
-		right: 0;
-		top: 0;
-		width: 100%;
-		background: black;
-		transform: translateX(+100%);
-		transition: transform 0.3s linear;
-	}
-
-	/* if we click the check box, the menu moves over */
-	/* from same tutorial */
-	.hamburger-container .checkbox:checked ~ .nav-stuff {
-		visibility: visible;
-		transform: translateX(0%);
-	}
-
-	/* same stuff but for the links */
-	/* from same tutorial */
-	.hamburger-container .nav-stuff a {
-		visibility: hidden;
-		transition: visibility 0.3s linear;
-	}
-
-	/* from same tutorial */
-	.hamburger-container .checkbox:checked ~ .nav-stuff a {
-		visibility: visible;
-	}
 }
 
 
@@ -737,7 +655,7 @@ a > button {
   }
 
   #project-container {
-	padding: 100px;
+	padding: 5.9%;
 	padding-top: 10%;
   }
 
@@ -753,8 +671,8 @@ a > button {
   }
 
   .project-list-item {
-	width: 25.3125rem;
-    height: 22.9375rem;
+	width: 30vw;
+    height: auto;
 	margin-top: 0;
 	margin-bottom: 3%;
 	padding: 8%;
@@ -773,8 +691,8 @@ a > button {
   }
 
   #project-detail {
-	width: 55rem;
-	height: 35rem;
+	width: 55vw;
+	height: 70vh;
 	position: fixed;
 	padding: 3%;
 	padding-top: 2%;
@@ -787,8 +705,8 @@ a > button {
   }
 
   #project-detail img {
-	width: 100px;
-	height: 100px;
+	width: 5.9%;
+	height: 5.9%;
   }
 
   .project-footer {
@@ -826,3 +744,119 @@ a > button {
 	flex-direction: row;
 	justify-content: space-between;
   }
+
+  .vertical-timeline-element-content bounce-in {
+	background: rgba($red, $green, $blue, 0.2); /* same as using "background: $color" */
+	backdrop-filter: blur( 6px );
+	-webkit-backdrop-filter: blur( 6px );
+	border-radius: 15px;
+	padding: 3% 3% 3% 3%;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+	text-align: left;
+  }
+
+
+
+  /* from course website */
+@media (max-width: 640px) {
+	/* centering all content on the website  */
+
+	.half-element {
+		width: 90%;
+	}
+
+	#about-me .glass-element{
+		width: 90%;
+	}
+
+
+	.columns {
+		flex-direction: column;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.icons {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	ul.nav-list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	/* The below code (HAMBURGER BAR SECTION) was created inspired by the tutorial below. I modified a few things as necessary to fit the aims of my website */
+	/* HOWEVER, I definitely started with the code from this tutorial, I do not take credit */
+	/* https://unused-css.com/blog/css-only-hamburger-menu/ */
+
+	/* This is to make the hamburger menu visible when we change to mobile */
+	.hamburger-container > input,
+	.hamburger {
+		visibility: visible;
+	}
+
+	/* styling the hamburger icon */
+	.hamburger {
+		z-index: 1;
+		position: absolute;
+		top: 1%;
+		right: 0px;
+		margin: 3%;
+		width: 20px;
+		height: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	/* this is a 'slice' as used in the tutorial, modified to my liking */
+	/* definitely used the css used as a reference point */
+	.hamburger .slice {
+		width: 100%;
+		height: 4px;
+		background: #4895ef;
+	}
+
+	/* checkbox moved to the top right corner where the hamburger is */
+	/* modified boilerplate code */
+	.hamburger-container .checkbox {
+		opacity: 0;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+	}
+
+	/* this sets a starting location for the navigation stuff before we translate it over */
+	/* THIS CODE IS WAS DIRECTLY TAKEN FROM https://unused-css.com/blog/css-only-hamburger-menu/ */
+	/* IT WAS THEN MODIFIED TO MY LIKING */
+	.nav-stuff {
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: 100%;
+		background: black;
+		transform: translateX(+100%);
+		transition: transform 0.3s linear;
+	}
+
+	/* if we click the check box, the menu moves over */
+	/* from same tutorial */
+	.hamburger-container .checkbox:checked ~ .nav-stuff {
+		visibility: visible;
+		transform: translateX(0%);
+	}
+
+	/* same stuff but for the links */
+	/* from same tutorial */
+	.hamburger-container .nav-stuff a {
+		visibility: hidden;
+		transition: visibility 0.3s linear;
+	}
+
+	/* from same tutorial */
+	.hamburger-container .checkbox:checked ~ .nav-stuff a {
+		visibility: visible;
+	}
+}

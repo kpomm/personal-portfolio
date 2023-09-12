@@ -1,6 +1,5 @@
 import kp5 from './pLogos/kp5.svg';
 import StellarBites from './pLogos/StellarBites.svg';
-import kpomm from '../img/logo.svg';
 import MeU from './pLogos/MeU.png';
 
 const projectDB = [
@@ -19,20 +18,20 @@ const projectDB = [
     title: 'StellarBites',
     header: 'Website for recipe recommendations',
     desc: 'This is a solo project I am currently working on! I am using react, the Spoonacular API, and the Random Image API to create a website that recommends recipes based on the food you have in your pantry! I am using Spoonacular API to curate recipes based on the ingredients you have, and Random Image API to show images of the ingredients you might be missing.',
-    skills: 'React, APIs',
+    skills: 'React, APIs, Figma',
     img: StellarBites,
     repoLink: 'https://github.com/georgia-dawahare/MeU',
     siteLink: 'https://stellarbites.xyz',
   },
   {
     id: 3,
-    title: 'Personal Portfolio',
-    header: 'Fun little website to show you all my projects!',
+    title: 'NatureNudge',
+    header: 'UI/UX case study aiming to connect users with nature.',
     desc: 'You are looking at it! This has been an awesome ongoing solo project to update my skills, projects, and endeavors in software development and UI/UX design.',
-    skills: 'React',
-    img: kpomm,
+    skills: 'Figma',
+    img: MeU,
     repoLink: 'https://github.com/kpomm/portfolio-react',
-    siteLink: 'https://kpomm.me',
+    siteLink: null,
   },
   {
     id: 4,
