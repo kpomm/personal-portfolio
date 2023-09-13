@@ -13,7 +13,7 @@ function Experience() {
           }}
           contentArrowStyle={{ borderRight: '7px solid  #fff' }}
           date="September 2022 - present"
-          iconStyle={{ background: 'rgba(33, 37, 41, 1)', color: '#fff' }}
+          iconStyle={{ background: '#89faa1', color: '#fff' }}
         >
           <h3 className="vertical-timeline-element-title">Creative Technologist Intern @ Hume AI</h3>
           <h4 className="vertical-timeline-element-subtitle">New York, NY</h4>

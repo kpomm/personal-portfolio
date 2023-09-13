@@ -1,5 +1,6 @@
 import kp5 from './pLogos/kp5.svg';
 import StellarBites from './pLogos/StellarBites.svg';
+import NatureNudge from './pLogos/NatureNudge.svg';
 import MeU from './pLogos/MeU.png';
 
 const projectDB = [
@@ -27,9 +28,9 @@ const projectDB = [
     id: 3,
     title: 'NatureNudge',
     header: 'UI/UX case study aiming to connect users with nature.',
-    desc: 'You are looking at it! This has been an awesome ongoing solo project to update my skills, projects, and endeavors in software development and UI/UX design.',
+    desc: 'Tasked with creating an app that encourages users to connect with the Earth, I worked with a partner to conduct UX research, create greyscales, conduct user testing, and create a high-fidelity prototype. The app itself allows users to search, plan, and share outdoor activities near them. As users log their outdoor activities, they earn achievements and unlock plants to put in their forest--a way to motivate users without creating stress.',
     skills: 'Figma',
-    img: MeU,
+    img: NatureNudge,
     repoLink: 'https://github.com/kpomm/portfolio-react',
     siteLink: null,
   },
