@@ -23,7 +23,6 @@ function ProjectDetail({ project }) {
           {project.skills}
         </h4>
         <h4><a href={project.repoLink}>Github Link</a></h4>
-
       </div>
     );
   }

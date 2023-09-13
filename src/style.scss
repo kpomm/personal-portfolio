@@ -291,6 +291,7 @@ li > img {
 
 /* moving onto the nav bar */
 #nav-logo {
+	margin: 5px;
 	width: 40px;
 	height: 40px;
 }
@@ -341,11 +342,12 @@ ul.nav-list {
 	font-weight: 300;
 	list-style-type: none;
 	margin: 0;
-	padding-left: 5.9%;
-	padding-right: 5.9%;
+	padding-left: 3%;
+	padding-right: 3%;
 	position: fixed;
 	top: 0;
 	height: 11vh;
+	align-items: center;
 	// background-color: $baseColor;
 	background: rgba($red, $green, $blue, 0.7); /* same as using "background: $color" */
 	backdrop-filter: blur( 15px );
@@ -860,4 +862,20 @@ a > button {
 	.hamburger-container .checkbox:checked ~ .nav-stuff a {
 		visibility: visible;
 	}
+}
+
+footer {
+	height: 8vh;
+	background: rgba(33, 37, 41, 0.2);
+	backdrop-filter: blur(6px);
+	-webkit-backdrop-filter: blur(6px);
+	// border-radius: 15px;
+	padding-right: 3%;
+	padding-left: 3%;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	text-align: left;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }

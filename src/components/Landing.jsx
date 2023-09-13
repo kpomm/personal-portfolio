@@ -145,10 +145,10 @@ function Landing() {
           <li className="half-element align-left glass-element">
             <h2>design</h2>
             <p>
-              More recently, I explored my interest in UI/UX design. taking
+              More recently, I explored my interest in UI/UX design. Taking
               cs52 (full-stack web development) at Dartmouth allowed me to explore
-              my design interests in a programming setting, but just finished up a term of UI/UX
-              design, where I learned how to walk through the entire design process from user research
+              my design interests in a programming setting. Taking a course solely dedicated to UI/UX taught me
+              how to walk through the entire design process from user research
               to final prototypes and a case study. My personal design work will be updated below as I take on
               more projects.
             </p>
