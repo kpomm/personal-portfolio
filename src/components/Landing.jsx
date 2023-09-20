@@ -49,7 +49,11 @@ function Landing() {
       <div id="about-me">
         <ul className="columns small-columns">
           <li className="glass-element">
-            <h3>about me</h3>
+            <h2>
+              about me
+              {' '}
+              <span>🤓</span>
+            </h2>
             <p>
               My name is Katherine Pommerening I am a rising junior at Dartmouth College majoring in Computer
               Science Modified with Physics.
@@ -75,6 +79,7 @@ function Landing() {
               <img className="skill-icon" alt="python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
               <img className="skill-icon" alt="java" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
               <img className="skill-icon" alt="javascript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+              <img className="skill-icon" alt="typescript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
               <img className="skill-icon" alt="html" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
               <img className="skill-icon" alt="css" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
               <img className="skill-icon" alt="react" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
@@ -167,7 +172,7 @@ function Landing() {
       </div>
       <div className="section" id="photography">
         <ul className="columns smaller-columns">
-          <li className="img-element rounded-element shadow-element">
+          <li className="half-element img-element rounded-element shadow-element">
             <img href="photos.html" className="img-cover" src={photography} alt="" />
           </li>
           <li className="half-element align-left glass-element">

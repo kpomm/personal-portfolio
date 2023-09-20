@@ -1,3 +1,6 @@
-const primaryColor = '#212529';
+const colorstorage = {
+  primaryColor: '#212229',
+  accentColor: '#e9ecef',
+};
 
-export default primaryColor;
+export default colorstorage;

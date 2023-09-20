@@ -2,7 +2,7 @@
 import React, { useCallback } from 'react';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
-import primaryColor from './colorstorage';
+import colorstorage from './colorstorage';
 
 // here I am following the react-tsparticles documentation
 function Particle() {
@@ -24,7 +24,7 @@ function Particle() {
       options={{
         background: {
           color: {
-            value: primaryColor,
+            value: colorstorage.primaryColor,
           },
         },
         fpsLimit: 120,
@@ -52,11 +52,11 @@ function Particle() {
         },
         particles: {
           color: {
-            value: '#ffffff',
+            value: colorstorage.accentColor,
             opacity: 0.2,
           },
           links: {
-            color: '#ffffff',
+            color: colorstorage.accentColor,
             distance: 150,
             enable: true,
             opacity: 0.3,
