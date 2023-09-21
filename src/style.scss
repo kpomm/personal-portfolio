@@ -100,7 +100,15 @@ h4 {
 	font-weight: 500;
 }
 
-h4 a {
+h5 {
+	font-family: "Roboto Mono", monospace;
+	font-size: 1.2rem;
+	color: $accent-color;
+	margin-bottom: 0;
+	font-weight: 300;
+}
+
+p a {
 	color: $accent-color;
 }
 
@@ -641,6 +649,7 @@ a > button {
   .react-slider {
 	padding-top: 9%;
 	z-index: 10;
+	min-height: 100vh;
   }
   .react-slider img {
 	height: 70vh;
@@ -726,6 +735,7 @@ a > button {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: center;
   }
 
   .project-footer h4 {
@@ -733,11 +743,11 @@ a > button {
   }
 
   .project-button {
-	height: 5vh;
+	height: auto;
 	width: auto;
-	font-size: 1.1rem;
-	padding: 1vh;
-	border-radius: 5px;
+	font-family: 'Roboto Mono', monospaced;
+	font-size: 0.9rem;
+	padding: 5px 10px 5px 10px;
 	border-color: $accent-color2;
 	color: $accent-color;
   }

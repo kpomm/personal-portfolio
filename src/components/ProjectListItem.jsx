@@ -19,19 +19,19 @@ function ProjectListItem(props) {
           <img src={project.img} alt="" />
         </div>
         <h4>{project.header}</h4>
-        <h4>
+        <h5>
           <HiWrenchScrewdriver style={iconStyle} />
           Skills:
           {' '}
           {project.skills}
-        </h4>
-        <h4>
+        </h5>
+        <p>
           <a href={project.repoLink}>Github/Figma Link</a>
-        </h4>
+        </p>
         <div className="project-footer">
-          <h4>
+          <p>
             <a href={project.siteLink}>Site Link</a>
-          </h4>
+          </p>
           <button className="project-button glass-element" type="submit" onClick={() => props.onProjectSelect(props.project)}>Learn More</button>
         </div>
       </li>
@@ -44,19 +44,19 @@ function ProjectListItem(props) {
           <img src={project.img} alt="" />
         </div>
         <h4>{project.header}</h4>
-        <h4>
+        <h5>
           <HiWrenchScrewdriver style={iconStyle} />
           Skills:
           {' '}
           {project.skills}
-        </h4>
-        <h4>
+        </h5>
+        <p>
           <a href={project.repoLink}>Github Link</a>
-        </h4>
+        </p>
         <div className="project-footer">
-          <h4>
+          <p>
             <a href={project.siteLink}>No site link</a>
-          </h4>
+          </p>
           <button className="project-button glass-element" type="submit" onClick={() => props.onProjectSelect(props.project)}>Learn More</button>
         </div>
       </li>
