@@ -2,7 +2,6 @@ import React from 'react';
 import {
   BrowserRouter, Routes, Route,
 } from 'react-router-dom';
-// import Counter from './counter';
 import Nav from './Nav';
 import Landing from './Landing';
 import Photos from './Photos';

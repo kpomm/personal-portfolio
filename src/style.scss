@@ -696,7 +696,7 @@ a > button {
     height: auto;
 	margin-top: 0;
 	margin-bottom: 3%;
-	padding: 8%;
+	padding: 30px 40px;
 	list-style: none;
   }
 
@@ -748,6 +748,7 @@ a > button {
 	font-family: 'Roboto Mono', monospaced;
 	font-size: 0.9rem;
 	padding: 5px 10px 5px 10px;
+	border-radius: 5px;
 	border-color: $accent-color2;
 	color: $accent-color;
   }
