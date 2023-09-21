@@ -51,15 +51,17 @@ function Landing() {
           <li className="glass-element">
             <h2>
               about me
-              {' '}
-              <span>🤓</span>
             </h2>
             <p>
               My name is Katherine Pommerening I am a rising junior at Dartmouth College majoring in Computer
               Science Modified with Physics.
               As a student who is passionate and motivated in and out of the classroom, I am looking to work in a
               fast-paced environment that gives me the chance to pick up new skills and dive right in. This fall,
-              I am working as a Creative Technologist intern for Hume AI in New York City. Outside of coding
+              I am working as a Creative Technologist intern for
+              {' '}
+              <span><a href="https://hume.ai/" target="_blank" rel="noopener noreferrer">Hume AI</a></span>
+              {' '}
+              in New York City. Outside of coding
               my hobbies include photography, skateboarding, and exploring the city!
             </p>
           </li>

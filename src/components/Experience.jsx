@@ -13,9 +13,13 @@ function Experience() {
           }}
           contentArrowStyle={{ borderRight: '7px solid  #fff' }}
           date="September 2022 - present"
-          iconStyle={{ background: '#89faa1', color: '#fff' }}
+          iconStyle={{ background: '#999ffa', color: '#fff' }}
         >
-          <h3 className="vertical-timeline-element-title">Creative Technologist Intern @ Hume AI</h3>
+          <h3 className="vertical-timeline-element-title">
+            Creative Technologist Intern @
+            {' '}
+            <span><a href="https://hume.ai/" target="_blank" rel="noopener noreferrer">Hume AI</a></span>
+          </h3>
           <h4 className="vertical-timeline-element-subtitle">New York, NY</h4>
           <p>
             Works in a small team of frontend developers and UI/UX designers to transform UI/UX components into
