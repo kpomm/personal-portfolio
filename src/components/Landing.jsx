@@ -7,8 +7,9 @@ import cptwn from '../img/cptwn.jpg';
 import programming from '../img/programming.svg';
 import photography from '../img/photography.jpg';
 import design from '../img/design.svg';
-import computerGirl from '../img/computerGirl.svg';
+import aboutIcon from '../img/graduation-3.svg';
 import ContactMe from './ContactMe';
+// import scienceGirl from '../img/scientist.svg';
 
 function Landing() {
   return (
@@ -49,9 +50,7 @@ function Landing() {
       <div id="about-me">
         <ul className="columns small-columns">
           <li className="glass-element">
-            <h2>
-              about me
-            </h2>
+            <h2>about me</h2>
             <p>
               My name is Katherine Pommerening I am a rising junior at Dartmouth College majoring in Computer
               Science Modified with Physics.
@@ -66,30 +65,7 @@ function Landing() {
             </p>
           </li>
           <li>
-            <img id="about-me-logo" src={computerGirl} alt="" />
-          </li>
-        </ul>
-      </div>
-
-      <div id="skills">
-        <ul className="columns">
-          <li>
-            <h2>skills</h2>
-          </li>
-          <li className="glass-element">
-            <div className="icons">
-              <img className="skill-icon" alt="python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
-              <img className="skill-icon" alt="java" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
-              <img className="skill-icon" alt="javascript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-              <img className="skill-icon" alt="typescript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
-              <img className="skill-icon" alt="html" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-              <img className="skill-icon" alt="css" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-              <img className="skill-icon" alt="react" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-              <img className="skill-icon" alt="firebase" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" />
-              <img className="skill-icon" alt="mongodb" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
-              <img className="skill-icon" alt="figma" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
-              <img className="skill-icon" alt="photoshop" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" />
-            </div>
+            <img id="about-me-logo" src={aboutIcon} alt="" />
           </li>
         </ul>
       </div>
@@ -122,6 +98,9 @@ function Landing() {
           <li className="half-element img-element rounded-element shadow-element">
             <img className="img-cover" src={cptwn} alt="" />
           </li>
+          {/* <li className="half-element rounded-element">
+            <img className="img-contain vector" src={scienceGirl} alt="" />
+          </li> */}
         </ul>
       </div>
       <div className="section" id="programming">
@@ -194,7 +173,31 @@ function Landing() {
           </li>
         </ul>
       </div>
+
       <ContactMe />
+
+      <div id="skills">
+        <ul className="columns">
+          <li>
+            <h2>skills</h2>
+          </li>
+          <li className="glass-element">
+            <div className="icons">
+              <img className="skill-icon" alt="python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+              <img className="skill-icon" alt="java" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+              <img className="skill-icon" alt="javascript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+              <img className="skill-icon" alt="typescript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
+              <img className="skill-icon" alt="html" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+              <img className="skill-icon" alt="css" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+              <img className="skill-icon" alt="react" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+              <img className="skill-icon" alt="firebase" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" />
+              <img className="skill-icon" alt="mongodb" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
+              <img className="skill-icon" alt="figma" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
+              <img className="skill-icon" alt="photoshop" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" />
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }

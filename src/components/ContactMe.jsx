@@ -17,7 +17,7 @@ function ContactMe() {
               <p>Email</p>
               <img src={email} alt="" />
             </div>
-            <a href="mailto:katherine.l.pommerening.25@dartmouth.edu">
+            <a href="mailto:katherine.l.pommerening.25@dartmouth.edu" target="_blank" rel="noopener noreferrer">
               katherine.l.pommerening.25@dartmouth.edu
             </a>
           </div>
@@ -26,14 +26,14 @@ function ContactMe() {
               <p>LinkedIn</p>
               <img src={linkedin} alt="" />
             </div>
-            <a href="https://www.linkedin.com/in/kpommerening/">@kpommerening</a>
+            <a href="https://www.linkedin.com/in/kpommerening/" target="_blank" rel="noopener noreferrer">@kpommerening</a>
           </div>
           <div className="panel">
             <div className="panel-interior">
               <p>GitHub</p>
               <img src={github} alt="" />
             </div>
-            <a href="https://github.com/kpomm">
+            <a href="https://github.com/kpomm" target="_blank" rel="noopener noreferrer">
               @kpomm
             </a>
           </div>

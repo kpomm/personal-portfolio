@@ -1,3 +1,4 @@
+/* eslint-disable no-nested-ternary */
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { NavLink } from 'react-router-dom';
@@ -27,10 +28,42 @@ function NavBar() {
                 resume
               </a>
             </div>
-            <li className="nav-right"><NavLink to="/contact-me">contact me</NavLink></li>
-            <li className="nav-right"><NavLink to="/experience">experience</NavLink></li>
-            <li className="nav-right"><NavLink to="/projects">projects</NavLink></li>
-            <li className="nav-right"><NavLink to="/photos">photos</NavLink></li>
+            <li className="nav-right">
+              <NavLink
+                to="/contact-me"
+                className={({ isActive, isPending }) => (isPending ? 'pending' : isActive ? 'active' : '')}
+              >
+                contact me
+              </NavLink>
+
+            </li>
+            <li className="nav-right">
+              <NavLink
+                to="/experience"
+                className={({ isActive, isPending }) => (isPending ? 'pending' : isActive ? 'active' : '')}
+              >
+                experience
+              </NavLink>
+
+            </li>
+            <li className="nav-right">
+              <NavLink
+                to="/projects"
+                className={({ isActive, isPending }) => (isPending ? 'pending' : isActive ? 'active' : '')}
+              >
+                projects
+              </NavLink>
+
+            </li>
+            <li className="nav-right">
+              <NavLink
+                to="/photos"
+                className={({ isActive, isPending }) => (isPending ? 'pending' : isActive ? 'active' : '')}
+              >
+                photos
+              </NavLink>
+
+            </li>
             {/* <li className="dropdown nav-right">
             <div className="dropbtn">
               apis i like

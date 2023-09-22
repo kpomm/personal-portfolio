@@ -236,12 +236,12 @@ li > img {
 
 .img-element {
 	width: 45%;
-	height: 70vh;
+	height: 60vh;
 	overflow: hidden;
 }
 
 .rounded-element {
-	border-radius: 15px;
+	border-radius: 10px;
 	background: none;
 }
 
@@ -249,7 +249,7 @@ li > img {
 	background: rgba($red, $green, $blue, 0.2); /* same as using "background: $color" */
 	backdrop-filter: blur( 6px );
 	-webkit-backdrop-filter: blur( 6px );
-	border-radius: 15px;
+	border-radius: 10px;
 	padding: 3% 3% 3% 3%;
 	border: 1px solid rgba( 255, 255, 255, 0.18 );
 	text-align: left;
@@ -371,19 +371,26 @@ ul.nav-list {
 /* https://www.w3schools.com/css/css_navbar.asp */
 ul.nav-list > li a {
 	font-size: 1rem;
-	padding: 10px;
+	padding: 8px;
 	padding-left: auto; 
 	padding-right: auto;
-	margin: 15px;
+	margin: 17px;
 	float: left;
 	text-decoration: none;
 	color: $accent-color;
 	transition-duration: 0.25s;
 	transition-timing-function: linear;
+	background-color: $baseColor;
+	border-radius: 5px;
 }
 
 ul.nav-list > li a:hover {
 	color: $accent-color2;
+}
+
+.nav-list a.active {
+	background-color: #555992;
+	color: $baseColor;
 }
 
 .nav-button a {
@@ -439,8 +446,13 @@ ul.nav-list > li a:hover {
 	margin-bottom: 50px;
 }
 
+.glass-element h2 {
+	margin-left: 0px;
+}
+
 #about-me h2 {
 	margin: 3%;
+	margin-left: 0;
 }
 
 #landing .glass-element {
@@ -508,8 +520,8 @@ ul.nav-list > li a:hover {
 }
 
 .panel img {
-	width: 25px;
-	height: 25px;
+	width: 20px;
+	height: 20px;
 	margin-left: 3%;
 }
 
