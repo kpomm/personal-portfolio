@@ -380,7 +380,7 @@ ul.nav-list > li a {
 	color: $accent-color;
 	transition-duration: 0.25s;
 	transition-timing-function: linear;
-	background-color: $baseColor;
+	background-color: none;
 	border-radius: 5px;
 }
 
@@ -389,8 +389,8 @@ ul.nav-list > li a:hover {
 }
 
 .nav-list a.active {
-	background-color: #555992;
-	color: $baseColor;
+	// background-color: #666cc6;
+	color: $accent-color2;
 }
 
 .nav-button a {
