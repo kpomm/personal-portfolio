@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import { IoIosArrowDown } from 'react-icons/io';
+import { CaretDown } from '@phosphor-icons/react';
 import pfp from '../img/pfp.jpg';
 import cptwn from '../img/cptwn.jpg';
 import programming from '../img/programming.svg';
@@ -9,6 +9,7 @@ import photography from '../img/photography.jpg';
 import design from '../img/design.svg';
 import aboutIcon from '../img/graduation-3.svg';
 import ContactMe from './ContactMe';
+import Divider from './Divider';
 // import scienceGirl from '../img/scientist.svg';
 
 function Landing() {
@@ -44,13 +45,15 @@ function Landing() {
             </h2>
           </li>
         </ul>
-        <IoIosArrowDown className="centered-icon" />
+        <CaretDown size={36} className="centered-icon" />
       </div>
 
       <div id="about-me">
         <ul className="columns small-columns">
           <li className="glass-element">
-            <h2>about me</h2>
+            <h2>
+              about me
+            </h2>
             <p>
               My name is Katherine Pommerening I am a rising junior at Dartmouth College majoring in Computer
               Science Modified with Physics.
@@ -93,6 +96,8 @@ function Landing() {
         </ul>
       </div>
 
+      <Divider />
+
       <div className="section" id="physics">
         <ul className="columns smaller-columns">
           <li className="half-element align-left glass-element" id="about-me-text">
@@ -126,6 +131,9 @@ function Landing() {
           </li> */}
         </ul>
       </div>
+
+      <Divider />
+
       <div className="section" id="programming">
         <ul className="columns smaller-columns">
           <li className="half-element rounded-element">
@@ -149,6 +157,9 @@ function Landing() {
           </li>
         </ul>
       </div>
+
+      <Divider />
+
       <div className="section" id="design">
         <ul className="columns smaller-columns">
           <li className="half-element align-left glass-element">
@@ -174,6 +185,9 @@ function Landing() {
           </li>
         </ul>
       </div>
+
+      <Divider />
+
       <div className="section" id="photography">
         <ul className="columns smaller-columns">
           <li className="half-element img-element rounded-element shadow-element">

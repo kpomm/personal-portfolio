@@ -48,7 +48,7 @@ body {
 h1 {
     font-family: 'Roboto Mono', monospace;
 	font-weight: 700;
-	font-size: 4rem;
+	font-size: 72px;
 	margin-bottom: 3%;
 	margin-top: 4%;
 	color: $accent-color;
@@ -58,21 +58,20 @@ h2 {
 	margin-top: 9%;
 	margin-bottom: 9%;
 	font-family: "Roboto Mono", monospace;
-	font-size: 2.5rem;
+	font-size: 36px;
 	font-weight: 600;
 	color: $accent-color;
 }
 
 h2 > a {
 	font-family: "Roboto Mono", monospace;
-	font-size: 3rem;
+	font-size: 48px;
 	color: $accent-color;
 	text-decoration: none;
 }
 
 h2 > a:hover {
 	font-family: "Roboto Mono", monospace;
-	font-size: 3rem;
 	color: $accent-color2;
 	text-decoration: underline;
 	transition-timing-function: linear;
@@ -126,7 +125,7 @@ p a {
 
 p {
 	color: $accent-color;
-	font-size: 1rem;
+	font-size: 16px;
 }
 
 p > a {
@@ -187,8 +186,6 @@ header {
 	margin-right: 50%;
 	margin-left: 50%;
 	margin-top: 2%;
-	width: 50px;
-	height: 50px;
 	color: $accent-color;
 }
 
@@ -286,8 +283,12 @@ li > img {
 .section {
 	width: 100%;
 	text-align: center;
-	padding-top: 15vh;
 	z-index: 5;
+}
+
+.divider {
+	width: 100%;
+	height: 10vh;
 }
 
 #experience {
@@ -770,10 +771,7 @@ a > button {
 	background-color: $accent-color2;
 	transform: translateY(0);
   }
-
-  #skills {
-	padding-top: 5vh;
-  }
+ 
 
   .icons {
 	display: flex;

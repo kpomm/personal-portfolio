@@ -38,7 +38,7 @@ const projectDB = [
     id: 4,
     title: 'MeU',
     header: 'Long-distance couples app',
-    desc: 'In this project, I worked in a team of 6 to create an app for long-distance couples to maintain a strong connection despite the distance. My responsibilities in this project include the landing page, which utilized OpenWeather API and Expo Location to show users what their partner\'s city looks like at the moment. I also configued the module that allows users to change their partner\'s background.',
+    desc: 'In this project, I worked in a team of 6 to create an app for long-distance couples to maintain a strong connection despite the distance. My responsibilities in this project include the landing page, which utilized OpenWeather API and Expo Location to show users what their partner\'s city looks like at the moment. I also configured the module that allows users to change their partner\'s background.',
     skills: 'React Native, Expo, X-Code, APIs, Firebase',
     img: MeU,
     repoLink: 'https://github.com/georgia-dawahare/MeU',
