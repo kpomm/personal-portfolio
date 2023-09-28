@@ -489,7 +489,7 @@ ul.nav-list > li a:hover {
 }
 
 #about-me .glass-element {
-	width: 60vw;
+	width: 55vw;
 }
 
 /* photogrid stuff */
@@ -557,6 +557,7 @@ ul.nav-list > li a:hover {
 .panel-interior {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 }
 
 #contact-img {

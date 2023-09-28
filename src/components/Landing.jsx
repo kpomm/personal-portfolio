@@ -7,7 +7,7 @@ import cptwn from '../img/cptwn.jpg';
 import programming from '../img/programming.svg';
 import photography from '../img/photography.jpg';
 import design from '../img/design.svg';
-import aboutIcon from '../img/graduation-3.svg';
+import aboutIcon from '../img/information-carousel.svg';
 import ContactMe from './ContactMe';
 import Divider from './Divider';
 // import scienceGirl from '../img/scientist.svg';
@@ -75,7 +75,7 @@ function Landing() {
 
       <Divider />
 
-      <div className="text-header"><h6>about me</h6></div>
+      <div className="text-header"><h6>...more about me</h6></div>
 
       <div className="section" id="physics">
         <ul className="columns smaller-columns">
