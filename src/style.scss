@@ -23,6 +23,10 @@ $red: red($baseColor);
 $green: green($baseColor);
 $blue: blue($baseColor);
 
+.accent-color {
+	color: $accent-color;
+}
+
 /* from class */
 html {
 	box-sizing: border-box;
@@ -58,8 +62,8 @@ h2 {
 	margin-top: 9%;
 	margin-bottom: 9%;
 	font-family: "Roboto Mono", monospace;
-	font-size: 36px;
-	font-weight: 600;
+	font-size: 32px;
+	font-weight: 500;
 	color: $accent-color;
 }
 
@@ -85,7 +89,7 @@ h2 > a:hover {
 h3 {
 	font-family: "Roboto Mono", monospace;
 	font-size: 1.8rem;
-	font-weight: 700;
+	font-weight: 500;
 	color: $accent-color;
 	margin-bottom: 0;
 	margin-top: 4%;
@@ -95,16 +99,27 @@ h4 {
 	font-family: "Roboto Mono", monospace;
 	font-size: 1.3rem;
 	color: $accent-color;
-	margin-bottom: 0;
-	font-weight: 500;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-weight: 400;
 }
 
 h5 {
 	font-family: "Roboto Mono", monospace;
-	font-size: 1.2rem;
+	font-size: 18px;
 	color: $accent-color;
-	margin-bottom: 0;
+	margin-bottom: 10px;
+	margin-top: 10px;
 	font-weight: 300;
+}
+
+h6 {
+	font-family: "Roboto Mono", monospace;
+	font-size: 40px;
+	color: $accent-color;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-weight: 500;
 }
 
 p a {
@@ -126,6 +141,7 @@ p a {
 p {
 	color: $accent-color;
 	font-size: 16px;
+	font-weight: 200;
 }
 
 p > a {
@@ -138,6 +154,14 @@ p > a:hover {
 
 header {
 	color: $accent-color;
+}
+
+.text-header {
+	width: 100%;
+	min-height: 15vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
 .text-section {
@@ -357,7 +381,7 @@ ul.nav-list {
 	padding-right: 3%;
 	position: fixed;
 	top: 0;
-	height: 11vh;
+	height: 9vh;
 	align-items: center;
 	// background-color: $baseColor;
 	background: rgba($red, $green, $blue, 0.7); /* same as using "background: $color" */
@@ -706,11 +730,14 @@ a > button {
 
   .project-list-item {
 	width: 30vw;
-    height: auto;
+    min-height: 40vh;
 	margin-top: 0;
 	margin-bottom: 3%;
 	padding: 30px 40px;
 	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
   }
 
   .project-list-item img {
@@ -727,10 +754,13 @@ a > button {
 
   #project-detail {
 	width: 55vw;
-	height: 70vh;
+	height: 65vh;
 	position: fixed;
 	padding: 3%;
 	padding-top: 2%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
   }
 
   #project-detail h2 {

@@ -8,9 +8,6 @@ function Photos(props) {
       <div className="react-slider">
         <LazyLoad />
       </div>
-      <div>
-        {/* <Carousel /> */}
-      </div>
     </div>
   );
 }

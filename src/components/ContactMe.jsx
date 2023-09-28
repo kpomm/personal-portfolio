@@ -2,13 +2,12 @@ import React from 'react';
 import github from '../img/github.svg';
 import linkedin from '../img/linkedin.png';
 import email from '../img/gmail-icon-logo.svg';
-import Divider from './Divider';
+// import Divider from './Divider';
 
 // contact me page
 function ContactMe() {
   return (
     <div>
-      <Divider />
       <div className="section" id="contact-me">
         <div className="glass-element">
           <div>

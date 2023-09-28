@@ -1,50 +1,63 @@
 import React from 'react';
-import { HiWrenchScrewdriver } from 'react-icons/hi2';
+import {
+  Lightning, GithubLogo, Browsers, FigmaLogo,
+} from '@phosphor-icons/react';
 
 function ProjectDetail({ project }) {
-  const iconStyle = { marginRight: '10px' };
+  const iconStyle = { marginRight: '5px' };
   if (!project) {
     return <div>Loading...</div>;
   }
 
-  if (project.siteLink == null) {
-    return (
-      <div id="project-detail" className="rounded-element glass-element">
+  return (
+    <div id="project-detail" className="rounded-element glass-element">
+      <div>
         <div className="project-list-item-header">
           <h2>{project.title}</h2>
           <img src={project.img} alt="" />
         </div>
         <h4>{project.header}</h4>
         <p>{project.desc}</p>
-        <h4>
-          <HiWrenchScrewdriver style={iconStyle} />
-          Skills:
-          {' '}
-          {project.skills}
-        </h4>
-        <h4><a href={project.repoLink}>Github Link</a></h4>
-      </div>
-    );
-  }
 
-  return (
-    <div id="project-detail" className="rounded-element glass-element">
-      <div className="project-list-item-header">
-        <h2>{project.title}</h2>
-        <img src={project.img} alt="" />
       </div>
-      <h4>{project.header}</h4>
-      <p>{project.desc}</p>
-      <h4>
-        <HiWrenchScrewdriver style={iconStyle} />
-        Skills:
-        {' '}
-        {project.skills}
-      </h4>
-      <h4><a href={project.repoLink}>Github Link</a></h4>
-      <h4>
-        <a href={project.siteLink}>Site Link</a>
-      </h4>
+
+      <div>
+        <div className="flex-row">
+          <Lightning size={28} style={iconStyle} className="accent-color" />
+          <h5>
+            Skills:
+            {' '}
+            {project.skills}
+          </h5>
+        </div>
+        {project.figmaLink
+        && (
+          <div className="flex-row">
+            <FigmaLogo size={28} style={iconStyle} className="accent-color" />
+            <h5>
+              <a href={project.figmaLink} target="_blank" rel="noopener noreferrer">Figma</a>
+            </h5>
+          </div>
+        )}
+        {project.repoLink
+        && (
+          <div className="flex-row">
+            <GithubLogo size={28} style={iconStyle} className="accent-color" />
+            <h5>
+              <a href={project.repoLink} target="_blank" rel="noopener noreferrer">Repo</a>
+            </h5>
+          </div>
+        )}
+        {project.siteLink
+        && (
+          <div className="flex-row">
+            <Browsers size={28} style={iconStyle} className="accent-color" />
+            <h5>
+              <a href={project.siteLink} target="_blank" rel="noopener noreferrer">Site</a>
+            </h5>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
