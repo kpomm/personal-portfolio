@@ -1,11 +1,11 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import { CaretDown } from '@phosphor-icons/react';
-import pfp from '../img/pfp.jpg';
+// import { CaretDown } from '@phosphor-icons/react';
+// import pfp from '../img/pfp.jpg';
 import cptwn from '../img/cptwn.jpg';
 import programming from '../img/programming.svg';
-import photography from '../img/photography.jpg';
+// import photography from '../img/photography.jpg';
 import design from '../img/design.svg';
 import aboutIcon from '../img/information-carousel.svg';
 import ContactMe from './ContactMe';
@@ -16,36 +16,24 @@ function Landing() {
   return (
     <div>
       <div className="section" id="landing">
-        <ul className="columns">
-          <li className="half-element">
-            <img id="profile-pic" src={pfp} alt="" />
+        <ul className="full-element">
+          <li>
+            {/* <img id="profile-pic" src={pfp} alt="" /> */}
+            <h1>&gt;kpomm welcome to my page</h1>
+
             <h1>
-              kpomm
+              &gt;kpomm
               <span className="blink">_</span>
             </h1>
-            <div className="glass-element">
+            {/* <div className="glass-element">
               <p>
                 A rising junior at Dartmouth College interested in software development and UI/UX
                 design.
               </p>
-            </div>
-          </li>
-          <li className="half-element align-right" id="nav-landing">
-            <h2>
-              <a href="#physics">physics</a>
-            </h2>
-            <h2>
-              <a href="#programming">programming</a>
-            </h2>
-            <h2>
-              <a href="#design">design</a>
-            </h2>
-            <h2>
-              <a href="#photography">photography</a>
-            </h2>
+            </div> */}
           </li>
         </ul>
-        <CaretDown size={36} className="centered-icon" />
+        {/* <CaretDown size={36} className="centered-icon" /> */}
       </div>
 
       <div id="about-me">
@@ -169,9 +157,9 @@ function Landing() {
 
       <div className="section" id="photography">
         <ul className="columns smaller-columns">
-          <li className="half-element img-element rounded-element shadow-element">
+          {/* <li className="half-element img-element rounded-element shadow-element">
             <img href="photos.html" className="img-cover" src={photography} alt="" />
-          </li>
+          </li> */}
           <li className="half-element align-left glass-element">
             <h2>photography</h2>
             <p>

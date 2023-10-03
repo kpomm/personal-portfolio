@@ -127,7 +127,7 @@ p a {
 }
 
 .blink {
-	animation: blinker 1s linear infinite;
+	animation: blinker 0.8s cubic-bezier(1,-0.01,1,-0.06) infinite;
 	color: $accent-color;
 	font-family: "Roboto Mono", monospace;
 }
@@ -249,6 +249,12 @@ li > img {
 	overflow: hidden;
 }
 
+.full-element {
+	width: 100%;
+	min-height: 50vh;
+	overflow: hidden;
+}
+
 .third-element {
 	width: 30%;
 	height: 50vh;
@@ -267,8 +273,8 @@ li > img {
 }
 
 .glass-element {
-	background: rgba($red, $green, $blue, 0.2); /* same as using "background: $color" */
-	backdrop-filter: blur( 6px );
+	background: rgba($red, $green, $blue, 0.3); /* same as using "background: $color" */
+	backdrop-filter: blur( 10px );
 	-webkit-backdrop-filter: blur( 6px );
 	border-radius: 10px;
 	padding: 3% 3% 3% 3%;
@@ -308,6 +314,7 @@ li > img {
 	width: 100%;
 	text-align: center;
 	z-index: 5;
+	padding: 0 100px;
 }
 
 .divider {
@@ -384,9 +391,9 @@ ul.nav-list {
 	height: 9vh;
 	align-items: center;
 	// background-color: $baseColor;
-	background: rgba($red, $green, $blue, 0.7); /* same as using "background: $color" */
-	backdrop-filter: blur( 15px );
-	-webkit-backdrop-filter: blur( 15px );
+	// background: rgba($red, $green, $blue, 0.7); /* same as using "background: $color" */
+	// backdrop-filter: blur( 15px );
+	// -webkit-backdrop-filter: blur( 15px );
 	flex-shrink: 0;
 	width: 100%;
 }
@@ -459,11 +466,14 @@ ul.nav-list > li a:hover {
 
 /* moving onto the first section, landing */
 #landing {
-	margin-top: 6vh;
 	margin-bottom: 3vh;
 	padding-top: 10vh;
+	padding: 10vh 10%;
 	text-align: left;
 	height: 100vh;
+	background-image: url("./landingphotos/landing.jpg");
+	background-size: cover;
+	background-position: bottom;
 }
 
 #landing h2 {
@@ -490,6 +500,12 @@ ul.nav-list > li a:hover {
 
 #about-me .glass-element {
 	width: 55vw;
+}
+
+#photography {
+	background-image: url("./photogrid/10.jpg");
+	background-size: cover;
+	height: 100vh;
 }
 
 /* photogrid stuff */
@@ -726,7 +742,7 @@ a > button {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	align-items: end;
+	align-items: flex-end;
   }
 
   .project-list-item {
