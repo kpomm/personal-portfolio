@@ -33,7 +33,7 @@ function NavBar() {
                 to="/contact-me"
                 className={({ isActive, isPending }) => (isPending ? 'pending' : isActive ? 'active' : '')}
               >
-                contact me
+                / contact me
               </NavLink>
 
             </li>
@@ -42,7 +42,7 @@ function NavBar() {
                 to="/experience"
                 className={({ isActive, isPending }) => (isPending ? 'pending' : isActive ? 'active' : '')}
               >
-                experience
+                / experience
               </NavLink>
 
             </li>
@@ -51,7 +51,7 @@ function NavBar() {
                 to="/projects"
                 className={({ isActive, isPending }) => (isPending ? 'pending' : isActive ? 'active' : '')}
               >
-                projects
+                / projects
               </NavLink>
 
             </li>
@@ -60,7 +60,7 @@ function NavBar() {
                 to="/photos"
                 className={({ isActive, isPending }) => (isPending ? 'pending' : isActive ? 'active' : '')}
               >
-                photos
+                / photos
               </NavLink>
 
             </li>

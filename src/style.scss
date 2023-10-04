@@ -1,8 +1,7 @@
 /* doing imports in css to keep all the styling away from the html */
 // @import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200;300;400;500;600&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Rubik:ital,wght@0,300;0,400;0,500;1,400&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
 
 // colors! 
 // $baseColor: #fcf8ff;
@@ -11,12 +10,12 @@
 // $baseColor: #2a2a2f;
 // $baseColor: #4f4f5a;
 
-$color: #666cc6;
+$color: #404ada;
 
-$baseColor: #212229;
+$accent-color: #212229;
 $lighter-baseColor: #676775;
-$accent-color: #e9ecef;
-$accent-color2: #999ffa;
+$baseColor: #e9ecef;
+$accent-color2: #6b82b8;
 $shadow-color: rgb(27, 27, 31);
 
 $red: red($baseColor);
@@ -43,39 +42,63 @@ html {
 
 /* body and text */
 body {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Sora', sans-serif;
 	font-weight: 300;
 	margin: 0;
 	background-color: $baseColor;
 }
 
 h1 {
-    font-family: 'Roboto Mono', monospace;
-	font-weight: 700;
-	font-size: 72px;
-	margin-bottom: 3%;
-	margin-top: 4%;
+    font-family: 'Sora', sans-serif;
+	font-weight: 300;
+	font-size: 120px;
+	margin-bottom: 0%;
+	margin-top: 2%;
+	line-height: 100%;
 	color: $accent-color;
+}
+
+#landingimg {
+	width: 20%;
+	height: auto;
+}
+
+#job-carousel {
+	margin-top: 2%;
+	background-image: linear-gradient(to left bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+	max-width: fit-content;	
+	height: 70px;
+	padding: 5px 10px;
+	border-radius: 10px;
+	text-decoration-color: $baseColor;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+.accent-text {
+	text-decoration: underline;
 }
 
 h2 {
 	margin-top: 9%;
 	margin-bottom: 9%;
-	font-family: "Roboto Mono", monospace;
+    font-family: 'Sora', sans-serif;
 	font-size: 32px;
 	font-weight: 500;
 	color: $accent-color;
 }
 
 h2 > a {
-	font-family: "Roboto Mono", monospace;
+    font-family: 'Sora', sans-serif;
 	font-size: 48px;
 	color: $accent-color;
 	text-decoration: none;
 }
 
 h2 > a:hover {
-	font-family: "Roboto Mono", monospace;
+    font-family: 'Sora', sans-serif;
 	color: $accent-color2;
 	text-decoration: underline;
 	transition-timing-function: linear;
@@ -87,7 +110,8 @@ h2 > a:hover {
 }
 
 h3 {
-	font-family: "Roboto Mono", monospace;
+	font-family: 'Sora', sans-serif;
+
 	font-size: 1.8rem;
 	font-weight: 500;
 	color: $accent-color;
@@ -96,7 +120,8 @@ h3 {
 }
 
 h4 {
-	font-family: "Roboto Mono", monospace;
+	font-family: 'Sora', sans-serif;
+
 	font-size: 1.3rem;
 	color: $accent-color;
 	margin-bottom: 10px;
@@ -105,7 +130,8 @@ h4 {
 }
 
 h5 {
-	font-family: "Roboto Mono", monospace;
+	font-family: 'Sora', sans-serif;
+
 	font-size: 18px;
 	color: $accent-color;
 	margin-bottom: 10px;
@@ -114,7 +140,8 @@ h5 {
 }
 
 h6 {
-	font-family: "Roboto Mono", monospace;
+	font-family: 'Sora', sans-serif;
+
 	font-size: 40px;
 	color: $accent-color;
 	margin-bottom: 10px;
@@ -129,7 +156,8 @@ p a {
 .blink {
 	animation: blinker 1s linear infinite;
 	color: $accent-color;
-	font-family: "Roboto Mono", monospace;
+	font-family: 'Sora', sans-serif;
+
 }
 @keyframes blinker {
 	50% {
@@ -140,9 +168,11 @@ p a {
 
 p {
 	color: $accent-color;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 200;
+	line-height: 160%;
 }
+
 
 p > a {
 	color: $accent-color;
@@ -190,12 +220,6 @@ header {
 
 .subsection-text {
 	margin-left: 5%;
-}
-
-#profile-pic {
-	border-radius: 100%;
-	height: 35vh;
-	width: 35vh;
 }
 
 .align-right {
@@ -247,6 +271,10 @@ li > img {
 	width: 45%;
 	min-height: 50vh;
 	overflow: hidden;
+}
+
+.full-element {
+	height: 70vh;
 }
 
 .third-element {
@@ -349,8 +377,9 @@ a#logo{
 }
 
 #about-me-logo {
-	width: 25vw;
-	height: 25vw;
+	width: 450px;
+	height: 450px;
+	border-radius: 100%;
 }
 
 .flex-row {
@@ -380,6 +409,7 @@ ul.nav-list {
 	padding-left: 3%;
 	padding-right: 3%;
 	position: fixed;
+	right: 0;
 	top: 0;
 	height: 9vh;
 	align-items: center;
@@ -419,7 +449,7 @@ ul.nav-list > li a:hover {
 }
 
 .nav-button a {
-	display: block;
+	display: flex;
 	font-size: 1rem;
 	text-decoration: none;
 	margin-top: 17px;
@@ -459,16 +489,18 @@ ul.nav-list > li a:hover {
 
 /* moving onto the first section, landing */
 #landing {
-	margin-top: 6vh;
+	margin-top: 10vh;
 	margin-bottom: 3vh;
-	padding-top: 10vh;
+	padding-top: 15vh;
 	text-align: left;
 	height: 100vh;
+
+
 }
 
 #landing h2 {
-	margin-top: 4%;
-	margin-bottom: 50px;
+	color: $baseColor;
+	margin: 0;
 }
 
 .glass-element h2 {
@@ -517,7 +549,6 @@ ul.nav-list > li a:hover {
 }
 
 #contact-me {
-	height: 80vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -531,15 +562,13 @@ ul.nav-list > li a:hover {
 #contact-panels {
 	width: 100%;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: space-between;
 	margin-bottom: 10%;
 	text-align: left;
 }
 
 .panel {
-	width: 25rem;
-	height: auto;
 	margin-top: 2%;
 	margin-bottom: 2%;
 }

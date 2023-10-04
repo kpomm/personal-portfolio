@@ -2,47 +2,35 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { CaretDown } from '@phosphor-icons/react';
-import pfp from '../img/pfp.jpg';
+import pfp from '../img/pfp.png';
 import cptwn from '../img/cptwn.jpg';
+import LandingGuy from '../img/LandingGuy.svg';
 import programming from '../img/programming.svg';
 import photography from '../img/photography.jpg';
 import design from '../img/design.svg';
-import aboutIcon from '../img/information-carousel.svg';
-import ContactMe from './ContactMe';
 import Divider from './Divider';
-// import scienceGirl from '../img/scientist.svg';
 
 function Landing() {
   return (
     <div>
       <div className="section" id="landing">
         <ul className="columns">
-          <li className="half-element">
-            <img id="profile-pic" src={pfp} alt="" />
+          <li>
             <h1>
-              kpomm
+              <span className="accent-text">K</span>
+              atherine
+            </h1>
+            <h1>
+              <span className="accent-text">Pomm</span>
+              erening
               <span className="blink">_</span>
             </h1>
-            <div className="glass-element">
-              <p>
-                A rising junior at Dartmouth College interested in software development and UI/UX
-                design.
-              </p>
+            <div id="job-carousel">
+              <h2>Creative Technologist</h2>
             </div>
           </li>
-          <li className="half-element align-right" id="nav-landing">
-            <h2>
-              <a href="#physics">physics</a>
-            </h2>
-            <h2>
-              <a href="#programming">programming</a>
-            </h2>
-            <h2>
-              <a href="#design">design</a>
-            </h2>
-            <h2>
-              <a href="#photography">photography</a>
-            </h2>
+          <li className="half-element img-element" id="landingimg">
+            <img src={LandingGuy} alt="" />
           </li>
         </ul>
         <CaretDown size={36} className="centered-icon" />
@@ -50,6 +38,9 @@ function Landing() {
 
       <div id="about-me">
         <ul className="columns small-columns">
+          <li>
+            <img id="about-me-logo" src={pfp} alt="" />
+          </li>
           <li className="glass-element">
             <h2>
               about me
@@ -66,9 +57,6 @@ function Landing() {
               in New York City. Outside of coding
               my hobbies include photography, skateboarding, and exploring the city!
             </p>
-          </li>
-          <li>
-            <img id="about-me-logo" src={aboutIcon} alt="" />
           </li>
         </ul>
       </div>
@@ -212,7 +200,6 @@ function Landing() {
           </li>
         </ul>
       </div>
-      <ContactMe />
     </div>
   );
 }
