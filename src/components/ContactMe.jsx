@@ -15,18 +15,18 @@ function ContactMe() {
           <div id="contact-panels">
             <div className="panel">
               <a href="mailto:katherine.l.pommerening.25@dartmouth.edu" target="_blank" rel="noopener noreferrer">
-                <EnvelopeOpen size={50} style={iconStyle} className="accent-color" />
+                <EnvelopeOpen size={50} style={iconStyle} className="contact-icon" />
               </a>
             </div>
             <div className="panel">
               <a href="https://www.linkedin.com/in/kpommerening/" target="_blank" rel="noopener noreferrer">
                 {' '}
-                <LinkedinLogo size={50} style={iconStyle} className="accent-color" />
+                <LinkedinLogo size={50} style={iconStyle} className="contact-icon" />
               </a>
             </div>
             <div className="panel">
               <a href="https://github.com/kpomm" target="_blank" rel="noopener noreferrer">
-                <GithubLogo size={50} style={iconStyle} className="accent-color" />
+                <GithubLogo size={50} style={iconStyle} className="contact-icon" />
               </a>
             </div>
           </div>

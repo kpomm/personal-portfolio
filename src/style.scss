@@ -17,10 +17,11 @@ $lighter-baseColor: #676775;
 $baseColor: #e9ecef;
 $accent-color2: #212229;
 $shadow-color: rgb(27, 27, 31);
+$darkerBaseColor: #b8bcc0;
 
-$red: red($baseColor);
-$green: green($baseColor);
-$blue: blue($baseColor);
+$red: red($darkerBaseColor);
+$green: green($darkerBaseColor);
+$blue: blue($darkerBaseColor);
 
 .accent-color {
 	color: $accent-color;
@@ -282,7 +283,7 @@ li > img {
 .third-element {
 	width: 32%;
 	text-align: left;
-	height: 60vh;
+	height: 65vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -291,7 +292,7 @@ li > img {
 	padding-top: 0;
 	padding-right: 2%;
 	border: 1px solid rgba(78, 78, 78, 0.18);
-	border-radius: 5px;
+	border-radius: 10px;
 }
 
 .full-element {
@@ -307,7 +308,9 @@ li > img {
 
 .rounded-element {
 	border-radius: 10px;
+	border: 1px solid rgba(78, 78, 78, 0.18);
 	background: none;
+	padding: 2%;
 }
 
 .glass-element {
@@ -316,7 +319,7 @@ li > img {
 	-webkit-backdrop-filter: blur( 10px );
 	border-radius: 10px;
 	padding: 3% 3% 3% 3%;
-	border: 1px solid rgba(78, 78, 78, 0.18);
+	border: 1px solid rgba(221, 221, 221, 0.539);
 	text-align: left;
 }
 
@@ -388,8 +391,9 @@ a#logo{
 .flex-row {
 	display: flex;
 	flex-direction: row;
-	width: auto;
+	width: fit-content;
 	align-items: center;
+	height: fit-content;
 }
 
 .flex-row img {
@@ -414,11 +418,9 @@ ul.nav-list {
 	position: fixed;
 	right: 0;
 	top: 0;
-	height: 9vh;
+	height: 10vh;
 	align-items: center;
-	background: rgba($red, $green, $blue, 0.7); /* same as using "background: $color" */
-	backdrop-filter: blur( 15px );
-	-webkit-backdrop-filter: blur( 15px );
+	background-color: $baseColor;
 	flex-shrink: 0;
 	width: 100%;
 }
@@ -443,12 +445,12 @@ ul.nav-list > li a {
 } 
 
 ul.nav-list > li a:hover {
-	color: $accent-color2;
+	color: #9a9ae1;
 }
 
 .nav-list a.active {
 	// background-color: #666cc6;
-	color: $accent-color2;
+	color: #9a9ae1;
 }
 
 .nav-button a {
@@ -519,11 +521,11 @@ ul.nav-list > li a:hover {
 	padding: 1% 1% 1% 3%;
 }
 
-#skills .glass-element {
+#skills .rounded-element {
 	width: 100%;
 }
 
-#about-me .glass-element {
+#about-me .rounded-element {
 	width: 55vw;
 }
 
@@ -559,6 +561,16 @@ ul.nav-list > li a:hover {
 	align-items: center;
 	margin-bottom: 2%;
 	margin-top: 2%;
+}
+
+.contact-icon {
+	color: $accent-color;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in;
+}
+
+.contact-icon:hover {
+	color:#aa8fd8;
 }
 
 #contact-me h2 {
@@ -624,13 +636,20 @@ a > button {
 	font-size: 1.3rem;
 	text-decoration: none;
 }
+ 
+
 
 #photography {
-	height: 80vh;
-	padding: 5vh;
+	height: 140vh;
+	padding: 20vh;
+	padding-top: 25vh;
 	background-image: url("./img/LandingPhoto.jpg");
 	background-size: cover;
 	background-position: center;
+	mask-image: url("./img/Mask.svg");
+  	mask-size: 100%;
+  	mask-repeat: no-repeat;
+  	mask-position: bottom;
 
 }
 

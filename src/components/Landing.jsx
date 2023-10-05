@@ -1,7 +1,9 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import { CaretDown, Palette, IntersectThree } from '@phosphor-icons/react';
+import {
+  CaretDown, Palette, IntersectThree, InstagramLogo, GithubLogo, FigmaLogo, Atom,
+} from '@phosphor-icons/react';
 import pfp from '../img/pfp.png';
 import LandingGuy from '../img/LandingGuy.svg';
 import ContactMe from './ContactMe';
@@ -10,6 +12,7 @@ import Divider from './Divider';
 
 function Landing() {
   const iconStyle = { marginLeft: '10px' };
+  const darkIconStyle = { marginLeft: '10px', color: '#212229' };
 
   return (
     <div id="landing-body">
@@ -46,7 +49,7 @@ function Landing() {
           <li>
             <img id="about-me-logo" src={pfp} alt="" />
           </li>
-          <li className="glass-element">
+          <li className="rounded-element">
             <h2>
               about me
             </h2>
@@ -81,7 +84,7 @@ function Landing() {
 
       <div className="text-header">
         <h6>my big three</h6>
-        <IntersectThree size={50} style={iconStyle} />
+        <IntersectThree size={50} style={darkIconStyle} />
       </div>
 
       <div className="section">
@@ -92,10 +95,14 @@ function Landing() {
               <p>
                 I have been researching at The Lynch Rocket Lab at Dartmouth for 2 years now. The lab builds rockets in conjunction with NASA which are launched every 6 months. I use Python 2 to analyze auroral data from these sounding rockets, to learn more about the mystery that is the magnetosphere.
               </p>
-
             </div>
 
-            <p><a href="https://instagram.com/kpshoot5" target="_blank" rel="noopener noreferrer">My Research</a></p>
+            <p>
+              <a href="https://sites.dartmouth.edu/lynch-rocket-lab/" target="_blank" rel="noopener noreferrer" className="flex-row">
+                <Atom size={24} />
+                My Research
+              </a>
+            </p>
           </li>
           <li className="third-element">
             <div>
@@ -105,7 +112,12 @@ function Landing() {
               </p>
 
             </div>
-            <p><a href="https://instagram.com/kpshoot5" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+            <p>
+              <a href="https://github.com/kpomm" target="_blank" rel="noopener noreferrer" className="flex-row">
+                <GithubLogo size={24} />
+                Github
+              </a>
+            </p>
 
           </li>
           <li className="third-element">
@@ -114,11 +126,13 @@ function Landing() {
               <p>
                 I am a Creative Technologist intern at Hume AI. I work between Figma and VSCode on the daily, transforming Figma prototypes into React components, effectively implementing the company's creative vision. I also have extensive experience with Adobe Photoshop and Illustrator, which I use alongside my photography business.
               </p>
-
             </div>
-
-            <p><a href="https://instagram.com/kpshoot5" target="_blank" rel="noopener noreferrer">Figma</a></p>
-
+            <p>
+              <a href="https://figma.com/@kpomm" target="_blank" rel="noopener noreferrer" className="flex-row">
+                <FigmaLogo size={24} />
+                Figma
+              </a>
+            </p>
           </li>
         </ul>
       </div>
@@ -131,17 +145,22 @@ function Landing() {
               <p className="accent-color-text">I've been taking pictures since 2019, and have explored all mediums including 35mm, 120mm, super8, and digital. I've been freelancing since 2021 and love it almost as much as web development :P</p>
 
             </div>
-            <p><a href="https://instagram.com/kpshoot5" target="_blank" rel="noopener noreferrer" className="accent-color-text">Instagram</a></p>
+            <p>
+              <a href="https://instagram.com/kpshoot5" target="_blank" rel="noopener noreferrer" className="accent-color-text flex-row">
+                <InstagramLogo size={20} />
+                Instagram
+              </a>
+
+            </p>
           </li>
         </ul>
       </div>
-      <Divider />
       <div id="skills">
         <ul className="columns">
           <li>
             <h2>skills</h2>
           </li>
-          <li className="glass-element">
+          <li className="rounded-element">
             <div className="icons">
               <img className="skill-icon" alt="python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
               <img className="skill-icon" alt="java" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
