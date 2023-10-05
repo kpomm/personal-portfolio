@@ -10,7 +10,7 @@ function ProjectDetail({ project }) {
   }
 
   return (
-    <div id="project-detail" className="rounded-element glass-element">
+    <div id="project-detail" className="rounded-element">
       <div>
         <div className="project-list-item-header">
           <h2>{project.title}</h2>

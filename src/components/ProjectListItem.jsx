@@ -15,7 +15,7 @@ function ProjectListItem(props) {
   console.log(props.project.img);
 
   return (
-    <li className="project-list-item rounded-element glass-element">
+    <li className="project-list-item rounded-element">
       <div>
         <div className="project-list-item-header">
           <h3>{project.title}</h3>
