@@ -10,11 +10,8 @@ function ContactMe() {
   const iconStyle = { marginRight: '5px' };
   return (
     <div>
-      <div className="section" id="contact-me">
-        <div className="glass-element">
-          <div>
-            <h2>contact me</h2>
-          </div>
+      <div id="contact-me">
+        <div>
           <div id="contact-panels">
             <div className="panel">
               <a href="mailto:katherine.l.pommerening.25@dartmouth.edu" target="_blank" rel="noopener noreferrer">

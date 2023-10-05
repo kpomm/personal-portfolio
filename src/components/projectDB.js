@@ -1,26 +1,7 @@
-import kp5 from './pLogos/kp5.svg';
-import StellarBites from './pLogos/StellarBites.svg';
 import NatureNudge from './pLogos/NatureNudge.svg';
 import MeU from './pLogos/MeU.png';
 
 const projectDB = [
-  {
-    id: 1,
-    title: 'kpshoot5',
-    header: 'Off-term photo blog',
-    desc: 'This is a super simple portfolio of my photos. They are exclusively taken on my off-term, 23F, while I live and work in New York City. This site is linked in my photography instagram, so it was designed with mobile users in mind.',
-    skills: 'React',
-    img: kp5,
-  },
-  {
-    id: 2,
-    title: 'StellarBites',
-    header: 'Website for recipe recommendations',
-    desc: 'This is a solo project I am currently working on! I am using react, the Spoonacular API, and the Random Image API to create a website that recommends recipes based on the food you have in your pantry! I am using Spoonacular API to curate recipes based on the ingredients you have, and Random Image API to show images of the ingredients you might be missing.',
-    skills: 'React, APIs, Figma',
-    img: StellarBites,
-    repoLink: 'https://github.com/georgia-dawahare/MeU',
-  },
   {
     id: 3,
     title: 'NatureNudge',

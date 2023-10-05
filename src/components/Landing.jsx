@@ -1,18 +1,18 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import { CaretDown } from '@phosphor-icons/react';
+import { CaretDown, Palette, IntersectThree } from '@phosphor-icons/react';
 import pfp from '../img/pfp.png';
-import cptwn from '../img/cptwn.jpg';
 import LandingGuy from '../img/LandingGuy.svg';
-import programming from '../img/programming.svg';
-import photography from '../img/photography.jpg';
-import design from '../img/design.svg';
+import ContactMe from './ContactMe';
+
 import Divider from './Divider';
 
 function Landing() {
+  const iconStyle = { marginLeft: '10px' };
+
   return (
-    <div>
+    <div id="landing-body">
       <div className="section" id="landing">
         <ul className="columns">
           <li>
@@ -26,10 +26,15 @@ function Landing() {
               <span className="blink">_</span>
             </h1>
             <div id="job-carousel">
-              <h2>Creative Technologist</h2>
+              <h3>
+                Creative Technologist
+                {'  '}
+              </h3>
+              <Palette size={40} style={iconStyle} />
             </div>
+            <ContactMe />
           </li>
-          <li className="half-element img-element" id="landingimg">
+          <li className="half-element img-element" id="landing-img">
             <img src={LandingGuy} alt="" />
           </li>
         </ul>
@@ -46,11 +51,22 @@ function Landing() {
               about me
             </h2>
             <p>
-              My name is Katherine Pommerening I am a rising junior at Dartmouth College majoring in Computer
-              Science Modified with Physics.
-              As a student who is passionate and motivated in and out of the classroom, I am looking to work in a
-              fast-paced environment that gives me the chance to pick up new skills and dive right in. This fall,
-              I am working as a Creative Technologist intern for
+              My name is Katherine Pommerening I am a rising junior at Dartmouth College majoring in Computer Science Modified with Physics. My work in Dartmouth's physics and computer science departments prepared me to problem solve. I am a self-starter who loves to think of new projects in my free time, and love collaboration. My experiences span from
+              {' '}
+              <span className="bolded-text">Data Science</span>
+              {' '}
+              and
+              {' '}
+              <span className="bolded-text">Machine-Learning</span>
+              {' '}
+              to
+              {' '}
+              <span className="bolded-text">Web Development</span>
+              {' '}
+              and
+              {' '}
+              <span className="bolded-text">UI/UX Design</span>
+              . I am working as a Creative Technologist intern for
               {' '}
               <span><a href="https://hume.ai/" target="_blank" rel="noopener noreferrer">Hume AI</a></span>
               {' '}
@@ -63,117 +79,40 @@ function Landing() {
 
       <Divider />
 
-      <div className="text-header"><h6>...more about me</h6></div>
+      <div className="text-header">
+        <h6>my big three</h6>
+        <IntersectThree size={50} style={iconStyle} />
+      </div>
 
-      <div className="section" id="physics">
-        <ul className="columns smaller-columns">
-          <li className="half-element align-left glass-element" id="about-me-text">
+      <div className="section">
+        <ul className="columns">
+          <li className="third-element">
             <h2>physics</h2>
             <p>
-              As a researcher in Dartmouth's Physics Department, I'm very
-              passionate about how the world around me works, especially space.
-              This past winter, I had the opportunity to conduct research at the
-              South African Large Telescope, where I stayed for a week. I would
-              stay up all night and sleep during the day -- would not recommend
-              for long stretches of time.
-            </p>
-            <p>
-              <a href="https://sites.dartmouth.edu/lynch-rocket-lab/">
-                my research lab
-              </a>
-            </p>
-            <p>
-              <a
-                href="https://physics.dartmouth.edu/news/2023/02/winter-2023-astronomy-fsp"
-              >
-                my time in cape town
-              </a>
-            </p>
-          </li>
-          <li className="half-element img-element rounded-element shadow-element">
-            <img className="img-cover" src={cptwn} alt="" />
-          </li>
-          {/* <li className="half-element rounded-element">
-            <img className="img-contain vector" src={scienceGirl} alt="" />
-          </li> */}
-        </ul>
-      </div>
+              I have been researching at The Lynch Rocket Lab at Dartmouth for 2 years now. The lab builds rockets in conjunction with NASA which are launched every 6 months. I use Python 2 to analyze auroral data from these sounding rockets, to learn more about the mystery that is the magnetosphere.
 
-      <Divider />
-
-      <div className="section" id="programming">
-        <ul className="columns smaller-columns">
-          <li className="half-element rounded-element">
-            <img className="img-contain vector" src={programming} alt="" />
+            </p>
           </li>
-          <li className="half-element align-left glass-element">
+          <li className="third-element">
             <h2>programming</h2>
             <p>
-              I am a dartmouth 25 majoring in computer science modified with
-              physics. My interests in computer science include software
-              engineering, fullstack development, and specifically React.
-              I've worked with APIs, React Native, React and a few
-              other tools. I have a collection of projects, both independent
-              and from the cs52 (full-stack web development) course at Dartmouth
-              that I am very proud of! This fall, I am a Creative Technologist Intern for Hume AI,
-              a startup that is working to build empathetic AI tools!
-            </p>
-            <p>
-              <a href="https://github.com/kpomm">github</a>
+              As a self-starter with strong organizational skills, I am a teaching assistant for object-oriented programming and will a teaching assistant for full-stack web development this coming spring. This winter, I also plan to start work at the Digital Applied Learning and Innovation lab as a developer.
             </p>
           </li>
-        </ul>
-      </div>
-
-      <Divider />
-
-      <div className="section" id="design">
-        <ul className="columns smaller-columns">
-          <li className="half-element align-left glass-element">
+          <li className="third-element">
             <h2>design</h2>
             <p>
-              More recently, I explored my interest in UI/UX design. Taking
-              cs52 (full-stack web development) at Dartmouth allowed me to explore
-              my design interests in a programming setting. Taking a course solely dedicated to UI/UX taught me
-              how to walk through the entire design process from user research
-              to final prototypes and a case study. My personal design work will be updated below as I take on
-              more projects.
+              I am a Creative Technologist intern at Hume AI. I work between Figma and VSCode on the daily, transforming Figma prototypes into React components, effectively implementing the company's creative vision. I also have extensive experience with Adobe Photoshop and Illustrator, which I use alongside my photography business.
             </p>
-            <p>
-              <a
-                href="https://www.figma.com/@kpomm"
-              >
-                check out my figma
-              </a>
-            </p>
-          </li>
-          <li className="half-element">
-            <img className="img-contain vector" src={design} alt="" />
           </li>
         </ul>
       </div>
-
       <Divider />
-
       <div className="section" id="photography">
-        <ul className="columns smaller-columns">
-          <li className="half-element img-element rounded-element shadow-element">
-            <img href="photos.html" className="img-cover" src={photography} alt="" />
-          </li>
-          <li className="half-element align-left glass-element">
-            <h2>photography</h2>
-            <p>
-              I've been taking pictures since 2019. Over my gap year before
-              college, I worked a lot of freelance and took a roadtrip that
-              culminated in a lot of awesome pictures. I still take a lot of
-              pictures but now work primarily in 35mm and 120mm film. I still
-              carry a small digital camera on me, and primarily focus on street
-              photography!
-            </p>
-            <p>
-              This fall, I am living and working in New York. Check out my recent stuff from that below!
-              You can also check out my photos page, where I keep my favorite pictures.
-            </p>
+        <ul className="columns">
+          <li className="half-element glass-element">
+            <h2 className="accent-color-text">also, I take pictures.</h2>
+            <p className="accent-color-text">I've been taking pictures since 2019, and have explored all mediums including 35mm, 120mm, super8, and digital. I've been freelancing since 2021 and love it almost as much as web development :P</p>
           </li>
         </ul>
       </div>
@@ -200,6 +139,7 @@ function Landing() {
           </li>
         </ul>
       </div>
+      <Divider />
     </div>
   );
 }
