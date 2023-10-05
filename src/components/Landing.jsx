@@ -87,23 +87,38 @@ function Landing() {
       <div className="section">
         <ul className="columns">
           <li className="third-element">
-            <h2>physics</h2>
-            <p>
-              I have been researching at The Lynch Rocket Lab at Dartmouth for 2 years now. The lab builds rockets in conjunction with NASA which are launched every 6 months. I use Python 2 to analyze auroral data from these sounding rockets, to learn more about the mystery that is the magnetosphere.
+            <div>
+              <h2>physics</h2>
+              <p>
+                I have been researching at The Lynch Rocket Lab at Dartmouth for 2 years now. The lab builds rockets in conjunction with NASA which are launched every 6 months. I use Python 2 to analyze auroral data from these sounding rockets, to learn more about the mystery that is the magnetosphere.
+              </p>
 
-            </p>
+            </div>
+
+            <p><a href="https://instagram.com/kpshoot5" target="_blank" rel="noopener noreferrer">My Research</a></p>
           </li>
           <li className="third-element">
-            <h2>programming</h2>
-            <p>
-              As a self-starter with strong organizational skills, I am a teaching assistant for object-oriented programming and will a teaching assistant for full-stack web development this coming spring. This winter, I also plan to start work at the Digital Applied Learning and Innovation lab as a developer.
-            </p>
+            <div>
+              <h2>programming</h2>
+              <p>
+                As a self-starter with strong organizational skills, I am a teaching assistant for object-oriented programming and will a teaching assistant for full-stack web development this coming spring. This winter, I also plan to start work at the Digital Applied Learning and Innovation lab as a developer.
+              </p>
+
+            </div>
+            <p><a href="https://instagram.com/kpshoot5" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+
           </li>
           <li className="third-element">
-            <h2>design</h2>
-            <p>
-              I am a Creative Technologist intern at Hume AI. I work between Figma and VSCode on the daily, transforming Figma prototypes into React components, effectively implementing the company's creative vision. I also have extensive experience with Adobe Photoshop and Illustrator, which I use alongside my photography business.
-            </p>
+            <div>
+              <h2>design</h2>
+              <p>
+                I am a Creative Technologist intern at Hume AI. I work between Figma and VSCode on the daily, transforming Figma prototypes into React components, effectively implementing the company's creative vision. I also have extensive experience with Adobe Photoshop and Illustrator, which I use alongside my photography business.
+              </p>
+
+            </div>
+
+            <p><a href="https://instagram.com/kpshoot5" target="_blank" rel="noopener noreferrer">Figma</a></p>
+
           </li>
         </ul>
       </div>
@@ -111,8 +126,12 @@ function Landing() {
       <div className="section" id="photography">
         <ul className="columns">
           <li className="half-element glass-element">
-            <h2 className="accent-color-text">also, I take pictures.</h2>
-            <p className="accent-color-text">I've been taking pictures since 2019, and have explored all mediums including 35mm, 120mm, super8, and digital. I've been freelancing since 2021 and love it almost as much as web development :P</p>
+            <div>
+              <h2 className="accent-color-text">also, I take pictures.</h2>
+              <p className="accent-color-text">I've been taking pictures since 2019, and have explored all mediums including 35mm, 120mm, super8, and digital. I've been freelancing since 2021 and love it almost as much as web development :P</p>
+
+            </div>
+            <p><a href="https://instagram.com/kpshoot5" target="_blank" rel="noopener noreferrer" className="accent-color-text">Instagram</a></p>
           </li>
         </ul>
       </div>

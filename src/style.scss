@@ -97,26 +97,11 @@ h1 {
 
 h2 {
 	margin-top: 9%;
-	margin-bottom: 9%;
+	margin-bottom: 7%;
     font-family: 'Sora', sans-serif;
 	font-size: 32px;
 	font-weight: 500;
 	color: $accent-color;
-}
-
-h2 > a {
-    font-family: 'Sora', sans-serif;
-	font-size: 48px;
-	color: $accent-color;
-	text-decoration: none;
-}
-
-h2 > a:hover {
-    font-family: 'Sora', sans-serif;
-	color: $accent-color2;
-	text-decoration: underline;
-	transition-timing-function: linear;
-	transition-duration: 0.1s;
 }
 
 .half-element h2 {
@@ -164,11 +149,17 @@ h6 {
 }
 
 p a {
-	color: $accent-color;
+	color: #d16ba5;
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 4px;
+	background-color: #d16ba52d;
+	border: solid 1px  #d16ba52d;
+
 }
 
 p a:hover {
-	color: #d16ba5;
+	border: solid 1px #d16ba5;
 }
 
 .blink {
@@ -188,17 +179,10 @@ p {
 	color: $accent-color;
 	font-size: 18px;
 	font-weight: 200;
-	line-height: 160%;
+	line-height: 170%;
 }
 
 
-p > a {
-	color: $accent-color;
-}
-
-p > a:hover {
-	color: $accent-color2;
-}
 
 header {
 	color: $accent-color;
@@ -288,6 +272,9 @@ li > img {
 .half-element {
 	width: 45%;
 	min-height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	overflow: hidden;
 	text-align: left;
 }
@@ -295,10 +282,10 @@ li > img {
 .third-element {
 	width: 32%;
 	text-align: left;
-	min-height: 55vh;
-	height: auto;
-	justify-content: center;
-	align-items: center;
+	height: 60vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	padding-bottom: 2%;
 	padding-left: 2%;
 	padding-top: 0;
@@ -325,25 +312,12 @@ li > img {
 
 .glass-element {
 	background: rgba($red, $green, $blue, 0.2); /* same as using "background: $color" */
-	backdrop-filter: blur( 6px );
-	-webkit-backdrop-filter: blur( 6px );
+	backdrop-filter: blur( 10px );
+	-webkit-backdrop-filter: blur( 10px );
 	border-radius: 10px;
 	padding: 3% 3% 3% 3%;
 	border: 1px solid rgba(78, 78, 78, 0.18);
 	text-align: left;
-}
-
-.shadow-element {
-	box-shadow: 0px 5px 10px 0px $shadow-color;
-	transition-timing-function: ease-in;
-	transition-duration: 0.1s;
-	background-color: $baseColor;
-}
-
-.shadow-element:hover {
-	transform: translateY(-3px);
-	box-shadow: 0px 10px 15px 0px $shadow-color;
-	z-index: 5;
 }
 
 .padding-top {
@@ -466,12 +440,7 @@ ul.nav-list > li a {
 	transition-timing-function: linear;
 	background-color: none;
 	border-radius: 5px;
-}
-
-
-
-
-  
+} 
 
 ul.nav-list > li a:hover {
 	color: $accent-color2;
@@ -513,7 +482,6 @@ ul.nav-list > li a:hover {
 	position: fixed;
 	top: 8vh;
 	background: none;
-	// background: linear-gradient(rgba( 64, 64, 73, 0.9), #00000000);
   }
 
 
@@ -626,11 +594,6 @@ ul.nav-list > li a:hover {
 	align-items: center;
 }
 
-#contact-img {
-	width: 40rem;
-	margin: 10%;
-}
-
 a {
 	color: $accent-color;
 }
@@ -670,78 +633,6 @@ a > button {
 	background-position: center;
 
 }
-
-
-// taken and modified from https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp
-/* The dropdown container */
-.dropdown {
-	float: right;
-	overflow: hidden;
-  }
-  
-  /* Dropdown button */
-  .dropdown .dropbtn {
-	border: none;
-	outline: none;
-	color: $accent-color;
-	font-size: 1.3rem;
-	padding: 20px;
-	text-decoration: none;
-	transition-duration: 0.15s;
-	transition-timing-function: linear;
-	border-radius: none;
-	background-color: inherit;
-	font-family: inherit; /* Important for vertical align on mobile phones */
-	margin: 0; /* Important for vertical align on mobile phones */
-  }
-
-  .dropbtn:hover {
-	cursor: pointer;
-  }
-  
-  .navbar a:hover, .dropdown:hover .dropbtn {
-	color: $accent-color2;
-  }
-  
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: $baseColor;
-	width: auto;
-	z-index: 1;
-	border-style: solid;
-	border-color: $accent-color;
-	border-width: 1px;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content .dropdown-listitem {
-	float: none;
-	color: $accent-color;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-	text-align: left;
-  }
-  
-  /* Add a grey background color to dropdown links on hover */
-  .dropdown-content a:hover {
-	color: $accent-color2;
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-	display: block;
-  }
-
-  // particles bg settings 
-  #tsparticles {
-	z-index: -1;
-	position: fixed;
-	width: 100%;
-  }
-
 
   // img slider settings 
   .react-slider {
@@ -870,13 +761,14 @@ a > button {
 	justify-content: space-between;
   }
 
+
   .vertical-timeline-element-content bounce-in {
 	background: rgba($red, $green, $blue, 0.2); /* same as using "background: $color" */
 	backdrop-filter: blur( 6px );
 	-webkit-backdrop-filter: blur( 6px );
 	border-radius: 15px;
 	padding: 3% 3% 3% 3%;
-	border: 1px solid rgba( 255, 255, 255, 0.18 );
+	border: 1px solid $accent-color;
 	text-align: left;
   }
 
