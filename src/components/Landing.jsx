@@ -84,7 +84,7 @@ function Landing() {
 
       <div className="text-header">
         <h6>my big three</h6>
-        <IntersectThree size={50} style={darkIconStyle} />
+        <IntersectThree id="big-three-logo" size={50} style={darkIconStyle} />
       </div>
 
       <div className="section">

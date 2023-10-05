@@ -13,7 +13,7 @@
 $color: #404ada;
 
 $accent-color: #212229;
-$lighter-baseColor: #676775;
+$lighter-baseColor: #f1f4f6;
 $baseColor: #e9ecef;
 $accent-color2: #212229;
 $shadow-color: rgb(27, 27, 31);
@@ -73,15 +73,16 @@ h1 {
 	height: fit-content;
 	padding: 5px 10px;
 	border-radius: 10px;
-	text-decoration-color: $baseColor;
+	text-decoration-color: $lighter-baseColor;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	transition-duration: 0.2s;
 	transition-timing-function: linear;
-	color: $baseColor;
+	color: $lighter-baseColor;
 }
+
 
 
 .accent-text {
@@ -504,7 +505,7 @@ ul.nav-list > li a:hover {
 }
 
 #landing h3 {
-	color: $baseColor;
+	color: $lighter-baseColor;
 	margin: 0;
 }
 
@@ -528,15 +529,6 @@ ul.nav-list > li a:hover {
 #about-me .rounded-element {
 	width: 55vw;
 }
-
-/* photogrid stuff */
-// .photo-grid {
-// 	display: flex;
-// 	flex-direction: row;
-// 	justify-content: space-between;
-// 	flex-wrap: wrap;
-// 	padding: 0% 6% 0% 6%;
-// }
 
 .photo-grid img {
 	margin: 1%;
