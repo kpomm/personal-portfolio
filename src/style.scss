@@ -664,13 +664,12 @@ a > button {
 
 #photography {
 	height: 140vh;
-	padding: 20vh;
-	padding-top: 25vh;
+	padding-top: 20%;
 	background-image: url("./img/LandingPhoto.jpg");
 	background-size: cover;
 	background-position: center;
 	mask-image: url("./img/Mask.svg");
-  	mask-size: 100%;
+  	mask-size: cover;
   	mask-repeat: no-repeat;
   	mask-position: bottom;
 
