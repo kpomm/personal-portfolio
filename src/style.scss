@@ -155,13 +155,43 @@ p a {
 	text-decoration: none;
 	border-radius: 5px;
 	padding: 4px;
-	background-color: #d16ba52d;
+	background-color: #d16ba51a;
 	border: solid 1px  #d16ba52d;
 
 }
 
 p a:hover {
 	border: solid 1px #d16ba5;
+}
+
+.blue {
+	color: #4e91be;
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 4px;
+	background-color: #58a2d42b;
+	border: solid 1px #58a2d432;
+
+}
+
+.blue:hover {
+	border-color: #4e91be;
+
+}
+
+.purple {
+	color: #6464a3;
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 4px;
+	background-color: #7676bc33;
+	border: solid 1px #7676bc31;
+
+}
+
+.purple:hover {
+	border-color: #6464a3;
+
 }
 
 .blink {
@@ -179,7 +209,7 @@ p a:hover {
 
 p {
 	color: $accent-color;
-	font-size: 18px;
+	font-size: 17px;
 	font-weight: 200;
 	line-height: 170%;
 }

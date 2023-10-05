@@ -98,7 +98,7 @@ function Landing() {
             </div>
 
             <p>
-              <a href="https://sites.dartmouth.edu/lynch-rocket-lab/" target="_blank" rel="noopener noreferrer" className="flex-row">
+              <a href="https://sites.dartmouth.edu/lynch-rocket-lab/" target="_blank" rel="noopener noreferrer" className="flex-row blue">
                 <Atom size={24} />
                 My Research
               </a>
@@ -113,7 +113,7 @@ function Landing() {
 
             </div>
             <p>
-              <a href="https://github.com/kpomm" target="_blank" rel="noopener noreferrer" className="flex-row">
+              <a href="https://github.com/kpomm" target="_blank" rel="noopener noreferrer" className="flex-row purple">
                 <GithubLogo size={24} />
                 Github
               </a>
@@ -128,7 +128,7 @@ function Landing() {
               </p>
             </div>
             <p>
-              <a href="https://figma.com/@kpomm" target="_blank" rel="noopener noreferrer" className="flex-row">
+              <a href="https://figma.com/@kpomm" target="_blank" rel="noopener noreferrer" className="flex-row pink">
                 <FigmaLogo size={24} />
                 Figma
               </a>
