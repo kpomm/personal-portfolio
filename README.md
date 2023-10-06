@@ -12,12 +12,13 @@ I had a bit of trouble deploying a vite app directly to pages, but once I found 
 
 ## Features
 There are a few pages. 
-• Landing: See basic info about me and my interests. You can also find my skillset here and some contact information. 
 
-• Photos: Here I have a React carousel of some of my favorite photos!
+–Landing: See basic info about me and my interests. You can also find my skillset here and some contact information. 
 
-• Projects: Check out some of my previous webdev and design projects. 
+–Photos: Here I have a React carousel of some of my favorite photos!
 
-• Experience: Where I feature my previous internships and on-campus involvements. 
+–Projects: Check out some of my previous webdev and design projects. 
 
-• Contact Me: Contact me. 
+–Experience: Where I feature my previous internships and on-campus involvements. 
+
+–Contact Me: Contact me. 
