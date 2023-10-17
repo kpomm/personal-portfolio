@@ -124,7 +124,7 @@ function Landing() {
             <div>
               <h2>design</h2>
               <p>
-                I am a Creative Technologist intern at Hume AI. I work between Figma and VSCode on the daily, transforming Figma prototypes into React components, effectively implementing the company's creative vision. I also have extensive experience with Adobe Photoshop and Illustrator, which I use alongside my photography business.
+                I am a Creative Technologist intern at Hume AI. I work between Figma and VSCode on the daily, transforming Figma prototypes into TypeScript components - effectively implementing the company's creative vision. I also have extensive experience with Adobe Photoshop and Illustrator, which I use in my photography business.
               </p>
             </div>
             <p>
