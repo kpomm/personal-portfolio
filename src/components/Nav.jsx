@@ -3,7 +3,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../img/logo.svg';
-import resume from '../docs/resume.pdf';
+import resume from '../docs/KatherinePommerening_Resume_2023Fall.pdf';
 
 function NavBar() {
   return (
@@ -33,7 +33,7 @@ function NavBar() {
                 to="/contact-me"
                 className={({ isActive, isPending }) => (isPending ? 'pending' : isActive ? 'active' : '')}
               >
-                contact me
+                / contact me
               </NavLink>
 
             </li>
@@ -42,7 +42,7 @@ function NavBar() {
                 to="/experience"
                 className={({ isActive, isPending }) => (isPending ? 'pending' : isActive ? 'active' : '')}
               >
-                experience
+                / experience
               </NavLink>
 
             </li>
@@ -51,7 +51,7 @@ function NavBar() {
                 to="/projects"
                 className={({ isActive, isPending }) => (isPending ? 'pending' : isActive ? 'active' : '')}
               >
-                projects
+                / projects
               </NavLink>
 
             </li>
@@ -60,7 +60,7 @@ function NavBar() {
                 to="/photos"
                 className={({ isActive, isPending }) => (isPending ? 'pending' : isActive ? 'active' : '')}
               >
-                photos
+                / photos
               </NavLink>
 
             </li>
