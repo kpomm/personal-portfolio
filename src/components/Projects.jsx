@@ -10,14 +10,11 @@ function Projects() {
   console.log('selected project', selectedProject);
   return (
     <div id="project-container">
-      <div id="project-inner-container">
-        <div id="project-detail-container">
-          <ProjectDetail project={selectedProject} />
-        </div>
-      </div>
       <div id="project-list-container">
         <ProjectList onProjectSelect={(selection) => setSelected(selection)} projects={projectDB} />
       </div>
+      <ProjectDetail project={selectedProject} />
+
     </div>
   );
 }

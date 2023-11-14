@@ -17,6 +17,7 @@ $lighter-baseColor: #f1f4f6;
 $baseColor: #ebe9ef;
 $accent-color2: #212229;
 $shadow-color: rgb(27, 27, 31);
+$activeColor: #e1dee6;
 $darkerBaseColor: #b8bcc0;
 
 $red: red($darkerBaseColor);
@@ -215,7 +216,7 @@ p {
 	color: $accent-color;
 	font-size: 17px;
 	font-weight: 200;
-	line-height: 170%;
+	line-height: 180%;
 }
 
 
@@ -715,29 +716,42 @@ a > button {
   #project-container {
 	padding: 5.9%;
 	padding-top: 10%;
+	min-height: 100vh;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
   }
 
-  #project-container h2 {
-	position: fixed;
-  }
+
 
   #project-list-container {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	align-items: flex-end;
+	align-items: flex-start;
   }
 
   .project-list-item {
-	width: 30vw;
-    min-height: 40vh;
+	width: 15vw;
+    height: 5vh;
+	margin: 5%;
 	margin-top: 0;
-	margin-bottom: 3%;
-	padding: 30px 40px;
 	list-style: none;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	align-items: start;
+	justify-content: center;
+	transition-duration: 0.2s;
+  }
+
+  .project-list-item:hover {
+	border-color: $accent-color;
+	cursor: pointer;
+  }
+
+  .project-list-item:active {
+	background-color: $activeColor;
   }
 
   .project-list-item img {
@@ -746,6 +760,16 @@ a > button {
   }
 
   .project-list-item-header {
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+  }
+
+  .project-detail-header {
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -753,9 +777,7 @@ a > button {
 
 
   #project-detail {
-	width: 55vw;
-	height: 65vh;
-	position: fixed;
+	width: 65vw;
 	padding: 3%;
 	padding-top: 2%;
 	display: flex;
@@ -886,16 +908,17 @@ a > button {
 @media (max-width: 640px) {
 	/* centering all content on the website  */
 
+	h1  {
+		font-size: 50px;
+	}
+
 	.half-element {
-		width: 90%;
+		width: 90vw;
 	}
 
 	#about-me .glass-element{
-		width: 90%;
+		width: 90vw;
 	}
-
-
-	
 
 	.icons {
 		flex-direction: column;
@@ -904,6 +927,7 @@ a > button {
 
 	ul.nav-list {
 		align-items: center;
+		height: 2vh;
 	}
 
 	/* The below code (HAMBURGER BAR SECTION) was created inspired by the tutorial below. I modified a few things as necessary to fit the aims of my website */
