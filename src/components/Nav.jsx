@@ -2,6 +2,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import logo from '../img/logo.svg';
 import resume from '../docs/KatherinePommerening_Resume_2023Fall.pdf';
 
@@ -19,7 +20,16 @@ function NavBar() {
                 <img id="nav-logo" src={logo} alt="" />
               </NavLink>
             </li>
-            <div className="nav-button nav-right">
+            <motion.div
+              className="nav-button nav-right"
+              whileHover={{
+                scale: 1.15,
+              }}
+              transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+              onHoverStart={(e) => {}}
+              onHoverEnd={(e) => {}}
+              whileTap={{ scale: 0.95 }}
+            >
               <a
                 href={resume}
                 target="_blank"
@@ -27,7 +37,7 @@ function NavBar() {
               >
                 resume
               </a>
-            </div>
+            </motion.div>
             <li className="nav-right">
               <NavLink
                 to="/contact-me"
@@ -55,7 +65,7 @@ function NavBar() {
               </NavLink>
 
             </li>
-            <li className="nav-right">
+            {/* <li className="nav-right">
               <NavLink
                 to="/photos"
                 className={({ isActive, isPending }) => (isPending ? 'pending' : isActive ? 'active' : '')}
@@ -63,7 +73,7 @@ function NavBar() {
                 / photos
               </NavLink>
 
-            </li>
+            </li> */}
             {/* <li className="dropdown nav-right">
             <div className="dropbtn">
               apis i like

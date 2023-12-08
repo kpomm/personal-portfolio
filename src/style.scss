@@ -740,7 +740,7 @@ a > button {
 	list-style: none;
 	display: flex;
 	flex-direction: column;
-	align-items: start;
+	align-items: flex-start;
 	justify-content: center;
 	transition-duration: 0.2s;
   }
