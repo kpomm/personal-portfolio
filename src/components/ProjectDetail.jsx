@@ -14,7 +14,8 @@ function ProjectDetail({ project }) {
       <div>
         <div className="project-detail-header">
           <h2>{project.title}</h2>
-          <img src={project.img} alt="" />
+          {project.img ? <img src={project.img} alt="" /> : null}
+
         </div>
         <h4>
           {project.type}

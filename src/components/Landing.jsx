@@ -4,6 +4,7 @@ import React from 'react';
 import {
   CaretDown, Palette, IntersectThree, InstagramLogo, GithubLogo, FigmaLogo, Atom,
 } from '@phosphor-icons/react';
+import { motion } from 'framer-motion';
 import AnimatedSection from './AnimatedSection';
 import pfp from '../img/pfp.png';
 import LandingGuy from '../img/LandingGuy.svg';
@@ -43,10 +44,23 @@ function Landing() {
             <img src={LandingGuy} alt="" />
           </li>
         </ul>
-        <CaretDown size={36} className="centered-icon" />
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            repeatType: 'reverse',
+          }}
+        >
+          <CaretDown size={36} className="centered-icon" />
+        </motion.div>
       </div>
 
-      <div id="about-me">
+      <div
+        id="about-me"
+
+      >
         <ul className="columns small-columns">
           <li>
             <img id="about-me-logo" src={pfp} alt="" />
@@ -88,8 +102,17 @@ function Landing() {
       <div className="text-header">
 
         <h6>my big three</h6>
-
-        <IntersectThree id="big-three-logo" size={50} style={darkIconStyle} />
+        <motion.div
+          initial={{ rotateX: 0 }}
+          animate={{ rotateX: -180 }}
+          transition={{
+            duration: 1.5,
+            repeat: Infinity,
+            repeatType: 'reverse',
+          }}
+        >
+          <IntersectThree id="big-three-logo" size={50} style={darkIconStyle} />
+        </motion.div>
       </div>
       <AnimatedSection>
         <div className="section">
