@@ -5,10 +5,10 @@ import { useInView } from 'react-intersection-observer';
 // contact me page
 const sectionVariants = {
   visible: {
-    opacity: 1, scale: 1, y: 0, transition: { duration: 0.4, ease: 'easeOut' },
+    opacity: 1, scale: 1, y: 0, transition: { duration: 0.3, ease: 'easeOut' },
   },
   hidden: {
-    opacity: 0, scale: 0.8, y: 80, transition: { duration: 0.4, ease: 'easeIn' },
+    opacity: 0, scale: 0.8, y: 80, transition: { duration: 0.3, ease: 'easeIn' },
   },
 };
 

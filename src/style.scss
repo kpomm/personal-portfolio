@@ -71,7 +71,9 @@ h1 {
 
 #job-carousel {
 	margin-top: 3%;
-	background-image: linear-gradient(to left bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+	background: linear-gradient(-45deg, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe);
+	background-size: 250%;
+    animation: anime 8s linear infinite;
 	max-width: fit-content;	
 	border: solid 1px #8aa7ec;
 	height: fit-content;
@@ -87,7 +89,19 @@ h1 {
 	color: $lighter-baseColor;
 }
 
+@keyframes anime {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
+   
 
 .accent-text {
 	text-decoration: underline;
