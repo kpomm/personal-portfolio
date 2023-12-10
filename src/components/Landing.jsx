@@ -22,20 +22,32 @@ function Landing() {
         <ul className="columns">
           <li>
             <h1>
-              <span className="accent-text">K</span>
-              atherine
+              K
+              <span className="accent-text">atherine</span>
             </h1>
             <h1>
-              <span className="accent-text">Pomm</span>
-              erening
-              <span className="blink">_</span>
+              Pomm
+              <span className="accent-text">erening</span>
             </h1>
             <div id="job-carousel">
               <h3>
                 Creative Technologist
                 {'  '}
               </h3>
-              <Palette size={40} style={iconStyle} />
+              <motion.div
+                initial={{ rotateY: 0, x: 0 }}
+                animate={{ rotateY: -180, x: 8 }}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  repeatType: 'reverse',
+                }}
+              >
+                <Palette size={40} style={iconStyle} />
+                {' '}
+
+              </motion.div>
+
             </div>
 
             <ContactMe />
@@ -57,45 +69,46 @@ function Landing() {
         </motion.div>
       </div>
 
-      <div
-        id="about-me"
+      <AnimatedSection>
+        <div
+          id="about-me"
+        >
+          <ul className="columns small-columns">
+            <li>
+              <img id="about-me-logo" src={pfp} alt="" />
+            </li>
+            <li className="rounded-element">
+              <h2>
+                about me
+              </h2>
 
-      >
-        <ul className="columns small-columns">
-          <li>
-            <img id="about-me-logo" src={pfp} alt="" />
-          </li>
-          <li className="rounded-element">
-            <h2>
-              about me
-            </h2>
-
-            <p>
-              My name is Katherine Pommerening I am a rising junior at Dartmouth College majoring in Computer Science Modified with Physics. My work in Dartmouth's physics and computer science departments prepared me to problem solve. I am a self-starter who loves to think of new projects in my free time, and love collaboration. My experiences span from
-              {' '}
-              <span className="bolded-text">Data Science</span>
-              {' '}
-              and
-              {' '}
-              <span className="bolded-text">Machine-Learning</span>
-              {' '}
-              to
-              {' '}
-              <span className="bolded-text">Web Development</span>
-              {' '}
-              and
-              {' '}
-              <span className="bolded-text">UI/UX Design</span>
-              . I am working as a Creative Technologist intern for
-              {' '}
-              <span><a href="https://hume.ai/" target="_blank" rel="noopener noreferrer">Hume AI</a></span>
-              {' '}
-              in New York City. Outside of coding
-              my hobbies include photography, skateboarding, and exploring the city!
-            </p>
-          </li>
-        </ul>
-      </div>
+              <p>
+                My name is Katherine Pommerening I am a rising junior at Dartmouth College majoring in Computer Science Modified with Physics. My work in Dartmouth's physics and computer science departments prepared me to problem solve. I am a self-starter who loves to think of new projects in my free time, and love collaboration. My experiences span from
+                {' '}
+                <span className="bolded-text">Data Science</span>
+                {' '}
+                and
+                {' '}
+                <span className="bolded-text">Machine-Learning</span>
+                {' '}
+                to
+                {' '}
+                <span className="bolded-text">Web Development</span>
+                {' '}
+                and
+                {' '}
+                <span className="bolded-text">UI/UX Design</span>
+                . I am working as a Creative Technologist intern for
+                {' '}
+                <span><a href="https://hume.ai/" target="_blank" rel="noopener noreferrer">Hume AI</a></span>
+                {' '}
+                in New York City. Outside of coding
+                my hobbies include photography, skateboarding, and exploring the city!
+              </p>
+            </li>
+          </ul>
+        </div>
+      </AnimatedSection>
 
       <Divider />
 
@@ -103,8 +116,8 @@ function Landing() {
 
         <h6>my big three</h6>
         <motion.div
-          initial={{ rotateX: 0 }}
-          animate={{ rotateX: -180 }}
+          initial={{ rotateY: 0, x: 0 }}
+          animate={{ rotateY: -180, x: 10 }}
           transition={{
             duration: 1.5,
             repeat: Infinity,

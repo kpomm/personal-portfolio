@@ -3,7 +3,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import logo from '../img/logo.svg';
+import logo2 from '../img/logo2.svg';
 import resume from '../docs/KatherinePommerening_Resume_2023Fall.pdf';
 
 function NavBar() {
@@ -17,7 +17,7 @@ function NavBar() {
                 to="/"
                 id="logo"
               >
-                <img id="nav-logo" src={logo} alt="" />
+                <img id="nav-logo" src={logo2} alt="" />
               </NavLink>
             </li>
             <motion.div
@@ -43,7 +43,7 @@ function NavBar() {
                 to="/contact-me"
                 className={({ isActive, isPending }) => (isPending ? 'pending' : isActive ? 'active' : '')}
               >
-                / contact me
+                / contact-me
               </NavLink>
 
             </li>
