@@ -7,7 +7,7 @@ import {
 import { motion } from 'framer-motion';
 import AnimatedSection from './AnimatedSection';
 import pfp from '../img/pfp.png';
-import LandingGuy from '../img/LandingGuy.svg';
+// import LandingGuy from '../img/LandingGuy.svg';
 import ContactMe from './ContactMe';
 
 import Divider from './Divider';
@@ -40,9 +40,9 @@ function Landing() {
 
             <ContactMe />
           </li>
-          <li className="half-element img-element" id="landing-img">
+          {/* <li className="half-element img-element" id="landing-img">
             <img src={LandingGuy} alt="" />
-          </li>
+          </li> */}
         </ul>
         <motion.div
           initial={{ opacity: 0, y: -10 }}

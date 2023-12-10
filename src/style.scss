@@ -538,6 +538,7 @@ ul.nav-list > li a:hover {
 	position: fixed;
 	top: 8vh;
 	background: none;
+	overflow-x: hidden;
   }
 
 
@@ -887,13 +888,18 @@ a > button {
 	
 	.columns {
 		justify-content: center;
+		align-items: center;
 	}
 
 	.third-element {
-		width: 70vw;
+		width: 90vw;
 		height: fit-content;
 		margin-top: 2vh;
 		margin-bottom: 2vh;
+	}
+
+	#below-nav-bar {
+		width: 100%;
 	}
 
 	#photography {
@@ -926,7 +932,32 @@ a > button {
 		font-size: 50px;
 	}
 
+	#landing {
+		height: 100vh;
+	}
+
+	#landing > .columns {
+		min-height: 70vh;
+	}
+
+	#job-carousel {
+		height: fit-content;
+	}
+
+	h3 {
+		font-size: 25px;
+	}
+
 	.half-element {
+		width: 90vw;
+	}
+
+	.small-columns {
+		flex-direction: column;
+		width: 90vw;
+	}
+
+	.small-columns li {
 		width: 90vw;
 	}
 
@@ -935,8 +966,15 @@ a > button {
 	}
 
 	.icons {
-		flex-direction: column;
+		flex-direction: row;
 		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.skill-icon {
+		width: 22vw;
+		height: 22vw;
+		margin: 3vw;
 	}
 
 	ul.nav-list {

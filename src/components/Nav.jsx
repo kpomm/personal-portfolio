@@ -86,7 +86,6 @@ function NavBar() {
           </ul>
         </div>
       </nav>
-      <div id="below-nav-bar" />
     </div>
   );
 }
