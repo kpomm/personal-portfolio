@@ -65,6 +65,16 @@ h1 {
 	color: $accent-color;
 }
 
+h7 {
+	margin: 0;
+  	left: calc(50% + 130px);
+  	font-size: 56px;
+  	font-weight: 700;
+  	letter-spacing: -3px;
+  	line-height: 1.2;
+  	position: absolute;
+}
+
 #landing-img {
 	width: 30%;
 	height: auto;
@@ -463,7 +473,7 @@ a#logo{
 /* modified code from here, but used display: flex instead for more ease of use */
 /* https://www.w3schools.com/css/css_navbar.asp */
 ul.nav-list {
-	z-index: 10;
+	z-index: 50;
 	font-weight: 300;
 	list-style-type: none;
 	margin: 0;
@@ -720,9 +730,12 @@ a > button {
   }
 
   #project-container {
-	padding: 5.9%;
-	padding-top: 10%;
-	min-height: 100vh;
+
+
+	// padding-top: 10%;
+	min-height: 70vh;
+	width: 90vw;
+	margin: auto;
 
 	display: flex;
 	flex-direction: row;
