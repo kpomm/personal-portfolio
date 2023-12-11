@@ -1,6 +1,6 @@
 const colorstorage = {
-  primaryColor: '#212229',
-  accentColor: '#e9ecef',
+  primaryColor: '#f1f1f1',
+  accentColor: '#f1f1f1',
 };
 
 export default colorstorage;

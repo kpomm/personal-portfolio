@@ -70,15 +70,6 @@ function Landing() {
         </motion.div>
       </div>
 
-      <div className="text-header">
-        <h6>
-          recent projects
-        </h6>
-      </div>
-      <Projects />
-
-      <Divider />
-
       <AnimatedSection>
         <div
           id="about-me"
@@ -119,6 +110,13 @@ function Landing() {
           </ul>
         </div>
       </AnimatedSection>
+
+      <div className="text-header">
+        <h6>
+          recent projects
+        </h6>
+      </div>
+      <Projects />
 
       <Divider />
 

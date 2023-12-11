@@ -14,7 +14,7 @@ $color: #404ada;
 
 $accent-color: #212229;
 $lighter-baseColor: #f1f4f6;
-$baseColor: #ebe9ef;
+$baseColor: #f1f1f1;
 $accent-color2: #212229;
 $shadow-color: rgb(27, 27, 31);
 $activeColor: #e1dee6;
@@ -37,6 +37,7 @@ html {
 	overflow-x: hidden;
 	padding: none;
 	margin: none;
+	background-color: $baseColor;
 }
 
 *,
@@ -52,7 +53,6 @@ body {
 	font-weight: 300;
 	margin: 0;
 	padding: 0;
-	background-color: $baseColor;
 }
 
 h1 {
@@ -420,9 +420,6 @@ li > img {
 	padding-top: 15vh;
 }
 
-.divider {
-	height: 10vh;
-}
 
 /* moving onto the nav bar */
 #nav-logo {
@@ -481,6 +478,7 @@ ul.nav-list {
 	margin: 0;
 	padding-left: 3%;
 	padding-right: 3%;
+	overflow-x: hidden;
 	position: fixed;
 	right: 0;
 	top: 0;
@@ -557,7 +555,6 @@ ul.nav-list > li a:hover {
 	padding-top: 15vh;
 	text-align: left;
 	height: 100vh;
-
 
 }
 
