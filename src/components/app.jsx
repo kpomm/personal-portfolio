@@ -7,6 +7,7 @@ import Landing from './Landing';
 import Experience from './Experience';
 import Projects from './Projects';
 import ContactMePage from './ContactMePage';
+import Photos from './Photos';
 
 // app
 function App(props) {
@@ -20,7 +21,7 @@ function App(props) {
               path="/"
               element={<Landing />}
             />
-            {/* <Route path="/photos" element={<Photos />} /> */}
+            <Route path="/photos" element={<Photos />} />
             <Route path="/experience" element={<Experience />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact-me" element={<ContactMePage />} />

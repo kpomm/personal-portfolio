@@ -65,7 +65,7 @@ function NavBar() {
               </NavLink>
 
             </li>
-            {/* <li className="nav-right">
+            <li className="nav-right">
               <NavLink
                 to="/photos"
                 className={({ isActive, isPending }) => (isPending ? 'pending' : isActive ? 'active' : '')}
@@ -73,7 +73,7 @@ function NavBar() {
                 / photos
               </NavLink>
 
-            </li> */}
+            </li>
             {/* <li className="dropdown nav-right">
             <div className="dropbtn">
               apis i like

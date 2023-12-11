@@ -9,6 +9,7 @@ import AnimatedSection from './AnimatedSection';
 import pfp from '../img/pfp.png';
 // import LandingGuy from '../img/LandingGuy.svg';
 import ContactMe from './ContactMe';
+import Projects from './Projects';
 
 import Divider from './Divider';
 
@@ -68,6 +69,15 @@ function Landing() {
           <CaretDown size={36} className="centered-icon" />
         </motion.div>
       </div>
+
+      <div className="text-header">
+        <h6>
+          recent projects
+        </h6>
+      </div>
+      <Projects />
+
+      <Divider />
 
       <AnimatedSection>
         <div
@@ -130,7 +140,17 @@ function Landing() {
       <AnimatedSection>
         <div className="section">
           <ul className="columns">
-            <li className="third-element">
+            <motion.li
+              className="third-element"
+              initial={{ scale: 0.98 }}
+              whileHover={{ scale: 1 }}
+              onHoverStart={(e) => {}}
+              onHoverEnd={(e) => {}}
+              transition={{
+                duration: 0.2,
+
+              }}
+            >
               <div>
                 <h2>physics</h2>
                 <p>
@@ -144,8 +164,18 @@ function Landing() {
                   My Research
                 </a>
               </p>
-            </li>
-            <li className="third-element">
+            </motion.li>
+            <motion.li
+              className="third-element"
+              initial={{ scale: 0.98 }}
+              whileHover={{ scale: 1 }}
+              onHoverStart={(e) => {}}
+              onHoverEnd={(e) => {}}
+              transition={{
+                duration: 0.2,
+
+              }}
+            >
               <div>
                 <h2>programming</h2>
                 <p>
@@ -160,8 +190,18 @@ function Landing() {
                 </a>
               </p>
 
-            </li>
-            <li className="third-element">
+            </motion.li>
+            <motion.li
+              className="third-element"
+              initial={{ scale: 0.98 }}
+              whileHover={{ scale: 1 }}
+              onHoverStart={(e) => {}}
+              onHoverEnd={(e) => {}}
+              transition={{
+                duration: 0.2,
+
+              }}
+            >
               <div>
                 <h2>design</h2>
                 <p>
@@ -174,7 +214,7 @@ function Landing() {
                   Figma
                 </a>
               </p>
-            </li>
+            </motion.li>
           </ul>
         </div>
       </AnimatedSection>
