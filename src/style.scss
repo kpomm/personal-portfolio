@@ -73,7 +73,8 @@ h7 {
   	letter-spacing: -3px;
   	line-height: 1.2;
   	position: absolute;
-	color: $mediumBaseColor;
+	mix-blend-mode: difference;
+	color: $darkerBaseColor;
 }
 
 #landing-img {
