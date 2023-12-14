@@ -58,10 +58,10 @@ function Landing() {
           </li> */}
         </ul>
         <motion.div
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 20 }}
           transition={{
-            duration: 2,
+            duration: 1.5,
             repeat: Infinity,
             repeatType: 'reverse',
           }}
@@ -103,7 +103,12 @@ function Landing() {
                 {' '}
                 <span><a href="https://hume.ai/" target="_blank" rel="noopener noreferrer">Hume AI</a></span>
                 {' '}
-                in New York City. Outside of coding
+                in New York City. I am also an incoming Summer Analyst (Technology) for
+                {' '}
+                <span><a href="https://apollo.com/" target="_blank" rel="noopener noreferrer">Apollo Global Management</a></span>
+                {' '}
+                {' '}
+                for the summer of 2024. Outside of coding
                 my hobbies include photography, skateboarding, and exploring the city!
               </p>
             </li>
