@@ -99,11 +99,11 @@ function Landing() {
                 and
                 {' '}
                 <span className="bolded-text">UI/UX Design</span>
-                . I am working as a Creative Technologist intern for
+                . I just finished an internship as a Creative Technologist for Hume AI
                 {' '}
                 <span><a href="https://hume.ai/" target="_blank" rel="noopener noreferrer">Hume AI</a></span>
                 {' '}
-                in New York City. I am also an incoming Summer Analyst (Technology) for
+                in New York City. I am a incoming Summer Technology Analyst for
                 {' '}
                 <span><a href="https://apollo.com/" target="_blank" rel="noopener noreferrer">Apollo Global Management</a></span>
                 {' '}
@@ -122,7 +122,6 @@ function Landing() {
         </h6>
       </div>
       <Projects />
-
       <Divider />
 
       <div className="text-header">

@@ -5,7 +5,7 @@ import {
 import Nav from './Nav';
 import Landing from './Landing';
 import Experience from './Experience';
-import Projects from './Projects';
+import ProjectsPage from './ProjectsPage';
 import ContactMePage from './ContactMePage';
 import Photos from './Photos';
 
@@ -23,7 +23,7 @@ function App(props) {
             />
             <Route path="/photos" element={<Photos />} />
             <Route path="/experience" element={<Experience />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/contact-me" element={<ContactMePage />} />
           </Routes>
         </div>

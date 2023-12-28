@@ -185,7 +185,7 @@ p a {
 	text-decoration: none;
 	border-radius: 5px;
 	font-weight: 300;
-	padding: 4px;
+	padding: 2px 4px;
 	background-color: #d16ba51a;
 	border: solid 1px  #d16ba52d;
 
@@ -732,12 +732,13 @@ a > button {
 
 
 	// padding-top: 10%;
-	min-height: 70vh;
 	width: 90vw;
 	margin: auto;
+	padding: 5vh;
 
 	display: flex;
 	flex-direction: row;
+	align-items: flex-start;
 	justify-content: space-around;
   }
 
@@ -748,6 +749,7 @@ a > button {
 	flex-direction: column;
 	flex-wrap: wrap;
 	align-items: flex-start;
+	justify-content: flex-start;
   }
 
   .project-list-item {
