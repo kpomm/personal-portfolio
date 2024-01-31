@@ -116,6 +116,9 @@ function Landing() {
         </div>
       </AnimatedSection>
 
+      <Divider />
+      <Divider />
+
       <div className="text-header">
         <h6>
           recent projects
